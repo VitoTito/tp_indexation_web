@@ -232,5 +232,13 @@ def crawl(seed_url, max_pages=50):
     print(f"Crawl terminé. {len(visited)} pages explorées.")
 
 
-# Lancement du crawler, pour vérifier si tout est ok
+# Tests sur quelques différentes pages de départ
+crawl("https://web-scraping.dev/review-policy", max_pages=10)
+crawl("https://web-scraping.dev/", max_pages=15)
+crawl("https://web-scraping.dev/testimonials", max_pages=20)
+
+# Les résultats montrent que l'on priorise bien les pages ayant 'product' dans l'URL
+
+
+# Lancement du crawler final
 crawl("https://web-scraping.dev/products")
