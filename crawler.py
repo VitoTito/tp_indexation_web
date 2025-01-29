@@ -237,7 +237,7 @@ crawl("https://web-scraping.dev/review-policy", max_pages=10)
 crawl("https://web-scraping.dev/", max_pages=15)
 crawl("https://web-scraping.dev/testimonials", max_pages=20)
 
-# Les résultats montrent que l'on priorise bien les pages ayant 'product' dans l'URL
+# Les résultats montrent que l'on priorise bien les pages ayant 'product' dans l'URL.
 
 
 # Lancement du crawler final
