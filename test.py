@@ -12,7 +12,7 @@ def load_products(filename):
     """Charge les produits depuis un fichier JSON"""
     with open(filename, "r", encoding="utf-8") as f:
         data = json.load(f)
-    return [entry["url"] for entry in data]  # Assuming each product has a "url" field
+    return [entry["url"] for entry in data] 
 
 
 # On charge les titres et produits des deux fichiers
@@ -27,7 +27,7 @@ correct_count_titles = sum(1 for o, r in zip(output_titles, results_titles) if o
 total_titles = len(results_titles)
 print(f"Titres corrects en position : {correct_count_titles}/{total_titles}")
 
-# Afficher les titres de output et results
+# On affiche les titres de output et results
 print("\nTitres dans output.json :")
 for title in output_titles:
     print(title)
