@@ -7,27 +7,26 @@ from urllib.parse import urljoin, urlparse
 from urllib.robotparser import RobotFileParser
 from urllib.error import URLError, HTTPError
 
-
 def can_fetch(url, user_agent="CrawlerIndexationWeb/1.0"):
     """
-    Vérifie si le site autorise le crawl en lisant le fichier robots.txt.
+    Checks if the site allows crawling by reading the robots.txt file.
 
-    Attributs
+    Attributes
     ----------
     url : str
-        URL de la page que l'on souhaite crawler.
-    user_agent : str, optionnel
-        User-Agent utilisé pour la requête HTTP. Par défaut, "CrawlerIndexationWeb/1.0".
+        URL of the page to be crawled.
+    user_agent : str, optional
+        User-Agent used for the HTTP request. Default is "CrawlerIndexationWeb/1.0".
 
     Returns
     --------
     bool
-        Retourne True si le crawl est autorisé, sinon False.
+        Returns True if crawling is allowed, otherwise False.
 
-    Détails de l'implémentation
+    Implementation Details
     ----------------------------
-    La fonction utilise la classe `RobotFileParser` pour lire le fichier `robots.txt`
-    du site et vérifier si le crawl est autorisé pour l'URL spécifiée.
+    The function uses the `RobotFileParser` class to read the site's `robots.txt`
+    file and check if crawling is allowed for the specified URL.
     """
     parsed_url = urlparse(url)
     robots_url = f"{parsed_url.scheme}://{parsed_url.netloc}/robots.txt"
@@ -38,30 +37,29 @@ def can_fetch(url, user_agent="CrawlerIndexationWeb/1.0"):
         rp.read()
         return rp.can_fetch(user_agent, url)
     except Exception as e:
-        print(f"Impossible de lire robots.txt : {e}")
+        print(f"Unable to read robots.txt: {e}")
         return False
-
 
 def fetch_url(url):
     """
-    Effectue des requêtes HTTP et récupère le HTML d'une page.
+    Makes HTTP requests and retrieves the HTML of a page.
 
-    Attributs
+    Attributes
     ----------
     url : str
-        URL de la page à récupérer.
+        URL of the page to retrieve.
 
     Returns
     --------
     str | None
-        Retourne le contenu HTML de la page sous forme de chaîne de caractères,
-        ou None en cas d'échec de la requête.
+        Returns the HTML content of the page as a string,
+        or None if the request fails.
 
-    Détails de l'implémentation
+    Implementation Details
     ----------------------------
-    La fonction effectue une requête HTTP à l'URL spécifiée en utilisant la
-    bibliothèque `urllib`. Elle gère les erreurs HTTP et de connexion et 
-    retourne le contenu HTML de la page.
+    The function makes an HTTP request to the specified URL using the
+    `urllib` library. It handles HTTP and connection errors and
+    returns the HTML content of the page.
     """
     try:
         headers = {"User-Agent": "CrawlerIndexationWeb/1.0"}
@@ -69,61 +67,60 @@ def fetch_url(url):
         with urllib.request.urlopen(req) as response:
             return response.read().decode('utf-8')
     except HTTPError as e:
-        print(f"Erreur HTTP {e.code} lors de la requête vers {url}")
+        print(f"HTTP Error {e.code} while requesting {url}")
     except URLError as e:
-        print(f"Erreur de connexion : {e.reason} lors de la requête vers {url}")
+        print(f"Connection error: {e.reason} while requesting {url}")
     return None
-
 
 def extract_data(html, base_url):
     """
-    Extrait le titre, le premier paragraphe et les liens internes d'une page.
+    Extracts the title, first paragraph, and internal links from a page.
 
-    Attributs
+    Attributes
     ----------
     html : str
-        Contenu HTML de la page à analyser.
+        HTML content of the page to analyze.
     base_url : str
-        URL de la page de base (utilisée pour résoudre les liens relatifs).
+        Base URL of the page (used to resolve relative links).
 
-    Retourne
+    Returns
     --------
     dict
-        Un dictionnaire contenant :
-        - "title" : titre de la page (str),
-        - "url" : URL de la page (str),
-        - "first_paragraph" : premier paragraphe de la page (str),
-        - "links" : liste des liens internes (list).
+        A dictionary containing:
+        - "title": title of the page (str),
+        - "url": URL of the page (str),
+        - "first_paragraph": first paragraph of the page (str),
+        - "links": list of internal links (list).
 
-    Détails de l'implémentation
+    Implementation Details
     ----------------------------
-    La fonction utilise BeautifulSoup pour analyser le contenu HTML et en extraire
-    les informations suivantes :
-    - Le titre de la page : priorité donnée à la balise `<title>`, puis à la balise `<h1>`, 
-      et enfin à un attribut `<meta name="og:title">`.
-    - Le premier paragraphe de la page : extrait de la première balise `<p>`.
-    - La liste des liens internes : tous les liens (`<a href="...">`) dont l'URL correspond au même domaine.
+    The function uses BeautifulSoup to parse the HTML content and extract
+    the following information:
+    - The title of the page: priority given to the `<title>` tag, then to the `<h1>` tag,
+      and finally to a `<meta name="og:title">` attribute.
+    - The first paragraph of the page: extracted from the first `<p>` tag.
+    - The list of internal links: all links (`<a href="...">`) whose URL matches the same domain.
     """
     soup = BeautifulSoup(html, "html.parser")
 
-    # On recherche le titre dans la balise <title> (par défaut)
+    # Search for the title in the <title> tag (default)
     title = soup.title.string.strip() if soup.title else None
 
-    # On recherche le titre dans une balise <h1> si <title> est vide ou invalide
+    # Search for the title in an <h1> tag if <title> is empty or invalid
     if not title:
         h1_tag = soup.find("h1")
         if h1_tag:
             title = h1_tag.get_text().strip()
 
-    # Si le titre n'est toujours pas trouvé, on utilise une autre méthode comme <meta name="og:title">
+    # If the title is still not found, use another method like <meta name="og:title">
     if not title:
         meta_title = soup.find("meta", attrs={"property": "og:title"})
         if meta_title and meta_title.get("content"):
             title = meta_title["content"].strip()
 
-    # Si aucun titre valide n'est trouvé, on met un titre par défaut
+    # If no valid title is found, set a default title
     if not title:
-        title = "Sans titre"
+        title = "No title"
 
     first_paragraph = ""
     p_tag = soup.find("p")
@@ -145,63 +142,61 @@ def extract_data(html, base_url):
         "links": links
     }
 
-
 def get_priority(url):
     """
-    Définit la priorité des URLs pour assurer un ordre cohérent.
+    Defines the priority of URLs to ensure a coherent order.
 
-    Attributs
+    Attributes
     ----------
     url : str
-        URL de la page à analyser.
+        URL of the page to analyze.
 
-    Retourne
+    Returns
     --------
     int
-        Priorité sous forme de nombre entier (0, 1, 2, 3).
+        Priority as an integer (0, 1, 2, 3).
 
-    Détails de l'implémentation
+    Implementation Details
     ----------------------------
-    La fonction attribue une priorité à chaque URL en fonction de son type :
-    - Priorité 0 : Pages produits principales.
-    - Priorité 1 : Pages catégories produits.
-    - Priorité 2 : Pages variantes des produits.
-    - Priorité 3 : Autres pages du site.
+    The function assigns a priority to each URL based on its type:
+    - Priority 0: Main product pages.
+    - Priority 1: Product category pages.
+    - Priority 2: Product variant pages.
+    - Priority 3: Other site pages.
     """
     if "product/" in url:
-        return 0  # Pages produits principales en priorité
+        return 0  # Main product pages have the highest priority
     else:
-        return 1  # Autres pages du site
-
+        return 1  # Other site pages
 
 def crawl(seed_url, max_pages=50):
     """
-    Crawler qui explore les pages en priorisant les liens produits.
+    Crawler that explores pages by prioritizing product links.
 
-    Attributs
+    Attributes
     ----------
     seed_url : str
-        URL de départ à partir de laquelle commencer le crawl. 
-    max_pages : int, optionnel
-        Nombre maximal de pages à explorer. Par défaut, 50 pages.
+        Starting URL from which to begin the crawl.
+    max_pages : int, optional
+        Maximum number of pages to explore. Default is 50 pages.
 
-    Retourne
+    Returns
     --------
     None
-        Cette fonction ne retourne aucune valeur, mais elle génère un fichier `output.json`
-        contenant les informations collectées.
+        This function does not return any value, but it generates a `output.json`
+        file containing the collected information.
 
-    Détails de l'implémentation
+    Implementation Details
     ----------------------------
-    La fonction commence par la page de départ spécifiée, puis explore les pages liées
-    en suivant une logique de priorité basée sur la nature des pages. Elle récupère
-    le titre, le premier paragraphe et les liens internes de chaque page visitée, et
-    enregistre ces informations dans un fichier JSON. Elle arrête le crawl après avoir
-    visité un maximum de 50 pages ou lorsque toutes les pages pertinentes ont été explorées.
+    The function starts with the specified seed URL, then explores linked pages
+    following a priority logic based on the nature of the pages. It retrieves
+    the title, first paragraph, and internal links of each visited page, and
+    saves this information in a JSON file. It stops the crawl after visiting a maximum of 50 pages
+    or when all relevant pages have been explored.
     """
     visited = set()
     to_visit = queue.PriorityQueue()
-    to_visit.put((0, seed_url))  # On met la priorité haute pour la première page
+    to_visit.put((0, seed_url))  # High priority for the first page
     data_collected = []
 
     while not to_visit.empty() and len(visited) < max_pages:
@@ -209,7 +204,7 @@ def crawl(seed_url, max_pages=50):
         if url in visited or not can_fetch(url):
             continue
 
-        print(f"Crawling : {url}")
+        print(f"Crawling: {url}")
         html = fetch_url(url)
         if not html:
             continue
@@ -218,27 +213,25 @@ def crawl(seed_url, max_pages=50):
         data_collected.append(extracted_data)
         visited.add(url)
 
-        # On ajoute les nouveaux liens avec une priorité adaptée
+        # Add new links with appropriate priority
         for link in extracted_data["links"]:
             if link not in visited:
                 to_visit.put((get_priority(link), link))
 
-        time.sleep(1)  # La politesse pour éviter d'être bloqué
+        time.sleep(1)  # Politeness to avoid being blocked
 
-    # On sauvegarde des résultats dans un fichier JSON
+    # Save results to a JSON file
     with open("output.json", "w", encoding="utf-8") as f:
         json.dump(data_collected, f, indent=4, ensure_ascii=False)
 
-    print(f"Crawl terminé. {len(visited)} pages explorées.")
+    print(f"Crawl completed. {len(visited)} pages explored.")
 
-
-# Tests sur quelques différentes pages de départ
+# Tests on a few different starting pages
 crawl("https://web-scraping.dev/review-policy", max_pages=10)
 crawl("https://web-scraping.dev/", max_pages=15)
 crawl("https://web-scraping.dev/testimonials", max_pages=20)
 
-# Les résultats montrent que l'on priorise bien les pages ayant 'product' dans l'URL.
+# The results show that pages with 'product' in the URL are prioritized.
 
-
-# Lancement du crawler final
+# Final crawler launch
 crawl("https://web-scraping.dev/products")
