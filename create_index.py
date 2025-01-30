@@ -14,6 +14,7 @@ INDEX_FOLDER = "index"  # Directory for saving index files
 STOPWORDS = set(["the", "a", "an", "and", "or", "of", "to", "in", "on", "with", "for", "by", "at", "from", 
                  "is", "it", "this", "that", "as", "are", "was", "were", "be", "been", "has", "have", "had"])
 
+
 def extract_product_info_from_url(url):
     """
     Extracts the product ID and variant (if any) from a given URL.
@@ -41,6 +42,7 @@ def extract_product_info_from_url(url):
     except Exception as e:
         print(f"Error parsing URL: {url}. Error: {e}")
         return {"product_id": None, "variant": None}
+
 
 def load_data_from_file(filename):
     """
@@ -75,6 +77,7 @@ def load_data_from_file(filename):
     
     return product_data
 
+
 def process_data(data):
     """
     Processes raw product data by extracting product IDs and variants from URLs.
@@ -97,6 +100,7 @@ def process_data(data):
     
     return processed_data
 
+
 def save_data_to_file(data, output_file=PROCESSED_FILE):
     """
     Saves processed product data to a JSONL file.
@@ -114,6 +118,7 @@ def save_data_to_file(data, output_file=PROCESSED_FILE):
                 file.write(json.dumps(doc, ensure_ascii=False) + "\n")
     except Exception as e:
         print(f"Error saving processed data to {output_file}: {e}")
+
 
 def tokenize_text(text):
     """
@@ -136,6 +141,7 @@ def tokenize_text(text):
     text = text.translate(str.maketrans('', '', string.punctuation))
     tokens = text.split()
     return [token for token in tokens if token not in STOPWORDS]
+
 
 def build_inverted_index_with_positions(field, data):
     """
@@ -164,6 +170,7 @@ def build_inverted_index_with_positions(field, data):
     
     return {token: {url: positions for url, positions in url_positions.items()} for token, url_positions in inverted_index.items()}
 
+
 def save_index_to_file(index, filename):
     """
     Saves an inverted index to a JSON file.
@@ -183,6 +190,7 @@ def save_index_to_file(index, filename):
             json.dump(index, file, indent=4, ensure_ascii=False)
     except Exception as e:
         print(f"Error saving index to {filename}: {e}")
+
 
 def build_reviews_index(data):
     """
@@ -222,6 +230,7 @@ def build_reviews_index(data):
     
     return reviews_index
 
+
 def save_reviews_index_to_file(reviews_index, filename="reviews_index.json"):
     """
     Saves the reviews index to a JSON file.
@@ -238,6 +247,7 @@ def save_reviews_index_to_file(reviews_index, filename="reviews_index.json"):
             json.dump(reviews_index, file, indent=4, ensure_ascii=False)
     except Exception as e:
         print(f"Error saving reviews index to {filename}: {e}")
+
 
 def build_features_index(data):
     """
@@ -266,6 +276,7 @@ def build_features_index(data):
 
     return {token: list(urls) for token, urls in features_index.items()}
 
+
 def save_features_index_to_file(features_index, filename="features_index.json"):
     """
     Saves the features index to a JSON file.
@@ -282,6 +293,7 @@ def save_features_index_to_file(features_index, filename="features_index.json"):
             json.dump(features_index, file, indent=4, ensure_ascii=False)
     except Exception as e:
         print(f"Error saving features index to {filename}: {e}")
+
 
 def run_main_pipeline():
     """
@@ -317,6 +329,7 @@ def run_main_pipeline():
     print("Features index creation completed!")
 
     print("All indexing completed!")
+
 
 if __name__ == "__main__":
     run_main_pipeline()
