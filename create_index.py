@@ -245,7 +245,7 @@ def save_reviews_index_to_file(reviews_index, filename="reviews_index.json"):
     try:
         with open(os.path.join(INDEX_FOLDER, filename), "w", encoding="utf-8") as file:
             json.dump(reviews_index, file, indent=4, ensure_ascii=False)
-    except Exception as e:
+    except Exception as e: 
         print(f"Error saving reviews index to {filename}: {e}")
 
 
