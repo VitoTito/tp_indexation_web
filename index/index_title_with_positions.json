@@ -1,1582 +1,1582 @@
 {
     "webscrapingdev": {
-        "0": [
+        "https://web-scraping.dev/products": [
             0
         ],
-        "133": [
+        "https://web-scraping.dev/products?category=apparel": [
             0
         ],
-        "134": [
+        "https://web-scraping.dev/products?category=apparel&page=1": [
             0
         ],
-        "135": [
+        "https://web-scraping.dev/products?category=apparel&page=2": [
             0
         ],
-        "136": [
+        "https://web-scraping.dev/products?category=apparel&page=3": [
             0
         ],
-        "137": [
+        "https://web-scraping.dev/products?category=apparel&page=4": [
             0
         ],
-        "138": [
+        "https://web-scraping.dev/products?category=apparel&page=5": [
             0
         ],
-        "139": [
+        "https://web-scraping.dev/products?category=consumables": [
             0
         ],
-        "140": [
+        "https://web-scraping.dev/products?category=consumables&page=1": [
             0
         ],
-        "141": [
+        "https://web-scraping.dev/products?category=consumables&page=2": [
             0
         ],
-        "142": [
+        "https://web-scraping.dev/products?category=consumables&page=3": [
             0
         ],
-        "143": [
+        "https://web-scraping.dev/products?category=consumables&page=4": [
             0
         ],
-        "144": [
+        "https://web-scraping.dev/products?category=consumables&page=5": [
             0
         ],
-        "145": [
+        "https://web-scraping.dev/products?category=household": [
             0
         ],
-        "146": [
+        "https://web-scraping.dev/products?category=household&page=1": [
             0
         ],
-        "147": [
+        "https://web-scraping.dev/products?category=household&page=2": [
             0
         ],
-        "148": [
+        "https://web-scraping.dev/products?category=household&page=3": [
             0
         ],
-        "149": [
+        "https://web-scraping.dev/products?category=household&page=4": [
             0
         ],
-        "150": [
+        "https://web-scraping.dev/products?category=household&page=5": [
             0
         ],
-        "151": [
+        "https://web-scraping.dev/products?page=1": [
             0
         ],
-        "152": [
+        "https://web-scraping.dev/products?page=2": [
             0
         ],
-        "153": [
+        "https://web-scraping.dev/products?page=3": [
             0
         ],
-        "154": [
+        "https://web-scraping.dev/products?page=4": [
             0
         ],
-        "155": [
+        "https://web-scraping.dev/products?page=5": [
             0
         ]
     },
     "product": {
-        "0": [
+        "https://web-scraping.dev/products": [
             1
         ],
-        "133": [
+        "https://web-scraping.dev/products?category=apparel": [
             1
         ],
-        "134": [
+        "https://web-scraping.dev/products?category=apparel&page=1": [
             1
         ],
-        "135": [
+        "https://web-scraping.dev/products?category=apparel&page=2": [
             1
         ],
-        "136": [
+        "https://web-scraping.dev/products?category=apparel&page=3": [
             1
         ],
-        "137": [
+        "https://web-scraping.dev/products?category=apparel&page=4": [
             1
         ],
-        "138": [
+        "https://web-scraping.dev/products?category=apparel&page=5": [
             1
         ],
-        "139": [
+        "https://web-scraping.dev/products?category=consumables": [
             1
         ],
-        "140": [
+        "https://web-scraping.dev/products?category=consumables&page=1": [
             1
         ],
-        "141": [
+        "https://web-scraping.dev/products?category=consumables&page=2": [
             1
         ],
-        "142": [
+        "https://web-scraping.dev/products?category=consumables&page=3": [
             1
         ],
-        "143": [
+        "https://web-scraping.dev/products?category=consumables&page=4": [
             1
         ],
-        "144": [
+        "https://web-scraping.dev/products?category=consumables&page=5": [
             1
         ],
-        "145": [
+        "https://web-scraping.dev/products?category=household": [
             1
         ],
-        "146": [
+        "https://web-scraping.dev/products?category=household&page=1": [
             1
         ],
-        "147": [
+        "https://web-scraping.dev/products?category=household&page=2": [
             1
         ],
-        "148": [
+        "https://web-scraping.dev/products?category=household&page=3": [
             1
         ],
-        "149": [
+        "https://web-scraping.dev/products?category=household&page=4": [
             1
         ],
-        "150": [
+        "https://web-scraping.dev/products?category=household&page=5": [
             1
         ],
-        "151": [
+        "https://web-scraping.dev/products?page=1": [
             1
         ],
-        "152": [
+        "https://web-scraping.dev/products?page=2": [
             1
         ],
-        "153": [
+        "https://web-scraping.dev/products?page=3": [
             1
         ],
-        "154": [
+        "https://web-scraping.dev/products?page=4": [
             1
         ],
-        "155": [
+        "https://web-scraping.dev/products?page=5": [
             1
         ]
     },
     "page": {
-        "0": [
+        "https://web-scraping.dev/products": [
             2
         ],
-        "133": [
+        "https://web-scraping.dev/products?category=apparel": [
             2
         ],
-        "134": [
+        "https://web-scraping.dev/products?category=apparel&page=1": [
             2
         ],
-        "135": [
+        "https://web-scraping.dev/products?category=apparel&page=2": [
             2
         ],
-        "136": [
+        "https://web-scraping.dev/products?category=apparel&page=3": [
             2
         ],
-        "137": [
+        "https://web-scraping.dev/products?category=apparel&page=4": [
             2
         ],
-        "138": [
+        "https://web-scraping.dev/products?category=apparel&page=5": [
             2
         ],
-        "139": [
+        "https://web-scraping.dev/products?category=consumables": [
             2
         ],
-        "140": [
+        "https://web-scraping.dev/products?category=consumables&page=1": [
             2
         ],
-        "141": [
+        "https://web-scraping.dev/products?category=consumables&page=2": [
             2
         ],
-        "142": [
+        "https://web-scraping.dev/products?category=consumables&page=3": [
             2
         ],
-        "143": [
+        "https://web-scraping.dev/products?category=consumables&page=4": [
             2
         ],
-        "144": [
+        "https://web-scraping.dev/products?category=consumables&page=5": [
             2
         ],
-        "145": [
+        "https://web-scraping.dev/products?category=household": [
             2
         ],
-        "146": [
+        "https://web-scraping.dev/products?category=household&page=1": [
             2
         ],
-        "147": [
+        "https://web-scraping.dev/products?category=household&page=2": [
             2
         ],
-        "148": [
+        "https://web-scraping.dev/products?category=household&page=3": [
             2
         ],
-        "149": [
+        "https://web-scraping.dev/products?category=household&page=4": [
             2
         ],
-        "150": [
+        "https://web-scraping.dev/products?category=household&page=5": [
             2
         ],
-        "151": [
+        "https://web-scraping.dev/products?page=1": [
             2
         ],
-        "152": [
+        "https://web-scraping.dev/products?page=2": [
             2
         ],
-        "153": [
+        "https://web-scraping.dev/products?page=3": [
             2
         ],
-        "154": [
+        "https://web-scraping.dev/products?page=4": [
             2
         ],
-        "155": [
+        "https://web-scraping.dev/products?page=5": [
             2
         ]
     },
     "1": {
-        "0": [
+        "https://web-scraping.dev/products": [
             3
         ],
-        "133": [
+        "https://web-scraping.dev/products?category=apparel": [
             3
         ],
-        "134": [
+        "https://web-scraping.dev/products?category=apparel&page=1": [
             3
         ],
-        "139": [
+        "https://web-scraping.dev/products?category=consumables": [
             3
         ],
-        "140": [
+        "https://web-scraping.dev/products?category=consumables&page=1": [
             3
         ],
-        "145": [
+        "https://web-scraping.dev/products?category=household": [
             3
         ],
-        "146": [
+        "https://web-scraping.dev/products?category=household&page=1": [
             3
         ],
-        "151": [
+        "https://web-scraping.dev/products?page=1": [
             3
         ]
     },
     "box": {
-        "1": [
+        "https://web-scraping.dev/product/1": [
             0
         ],
-        "24": [
+        "https://web-scraping.dev/product/13": [
             0
         ],
-        "25": [
+        "https://web-scraping.dev/product/13?variant=cherry-large": [
             0
         ],
-        "26": [
+        "https://web-scraping.dev/product/13?variant=cherry-medium": [
             0
         ],
-        "27": [
+        "https://web-scraping.dev/product/13?variant=cherry-small": [
             0
         ],
-        "28": [
+        "https://web-scraping.dev/product/13?variant=orange-large": [
             0
         ],
-        "29": [
+        "https://web-scraping.dev/product/13?variant=orange-medium": [
             0
         ],
-        "30": [
+        "https://web-scraping.dev/product/13?variant=orange-small": [
             0
         ],
-        "50": [
+        "https://web-scraping.dev/product/1?variant=cherry-large": [
             0
         ],
-        "51": [
+        "https://web-scraping.dev/product/1?variant=cherry-medium": [
             0
         ],
-        "52": [
+        "https://web-scraping.dev/product/1?variant=cherry-small": [
             0
         ],
-        "53": [
+        "https://web-scraping.dev/product/1?variant=orange-large": [
             0
         ],
-        "54": [
+        "https://web-scraping.dev/product/1?variant=orange-medium": [
             0
         ],
-        "55": [
+        "https://web-scraping.dev/product/1?variant=orange-small": [
             0
         ],
-        "88": [
+        "https://web-scraping.dev/product/25": [
             0
         ],
-        "89": [
+        "https://web-scraping.dev/product/25?variant=cherry-large": [
             0
         ],
-        "90": [
+        "https://web-scraping.dev/product/25?variant=cherry-medium": [
             0
         ],
-        "91": [
+        "https://web-scraping.dev/product/25?variant=cherry-small": [
             0
         ],
-        "92": [
+        "https://web-scraping.dev/product/25?variant=orange-large": [
             0
         ],
-        "93": [
+        "https://web-scraping.dev/product/25?variant=orange-medium": [
             0
         ],
-        "94": [
+        "https://web-scraping.dev/product/25?variant=orange-small": [
             0
         ]
     },
     "chocolate": {
-        "1": [
+        "https://web-scraping.dev/product/1": [
             1
         ],
-        "24": [
+        "https://web-scraping.dev/product/13": [
             1
         ],
-        "25": [
+        "https://web-scraping.dev/product/13?variant=cherry-large": [
             1
         ],
-        "26": [
+        "https://web-scraping.dev/product/13?variant=cherry-medium": [
             1
         ],
-        "27": [
+        "https://web-scraping.dev/product/13?variant=cherry-small": [
             1
         ],
-        "28": [
+        "https://web-scraping.dev/product/13?variant=orange-large": [
             1
         ],
-        "29": [
+        "https://web-scraping.dev/product/13?variant=orange-medium": [
             1
         ],
-        "30": [
+        "https://web-scraping.dev/product/13?variant=orange-small": [
             1
         ],
-        "50": [
+        "https://web-scraping.dev/product/1?variant=cherry-large": [
             1
         ],
-        "51": [
+        "https://web-scraping.dev/product/1?variant=cherry-medium": [
             1
         ],
-        "52": [
+        "https://web-scraping.dev/product/1?variant=cherry-small": [
             1
         ],
-        "53": [
+        "https://web-scraping.dev/product/1?variant=orange-large": [
             1
         ],
-        "54": [
+        "https://web-scraping.dev/product/1?variant=orange-medium": [
             1
         ],
-        "55": [
+        "https://web-scraping.dev/product/1?variant=orange-small": [
             1
         ],
-        "88": [
+        "https://web-scraping.dev/product/25": [
             1
         ],
-        "89": [
+        "https://web-scraping.dev/product/25?variant=cherry-large": [
             1
         ],
-        "90": [
+        "https://web-scraping.dev/product/25?variant=cherry-medium": [
             1
         ],
-        "91": [
+        "https://web-scraping.dev/product/25?variant=cherry-small": [
             1
         ],
-        "92": [
+        "https://web-scraping.dev/product/25?variant=orange-large": [
             1
         ],
-        "93": [
+        "https://web-scraping.dev/product/25?variant=orange-medium": [
             1
         ],
-        "94": [
+        "https://web-scraping.dev/product/25?variant=orange-small": [
             1
         ]
     },
     "candy": {
-        "1": [
+        "https://web-scraping.dev/product/1": [
             2
         ],
-        "24": [
+        "https://web-scraping.dev/product/13": [
             2
         ],
-        "25": [
+        "https://web-scraping.dev/product/13?variant=cherry-large": [
             2
         ],
-        "26": [
+        "https://web-scraping.dev/product/13?variant=cherry-medium": [
             2
         ],
-        "27": [
+        "https://web-scraping.dev/product/13?variant=cherry-small": [
             2
         ],
-        "28": [
+        "https://web-scraping.dev/product/13?variant=orange-large": [
             2
         ],
-        "29": [
+        "https://web-scraping.dev/product/13?variant=orange-medium": [
             2
         ],
-        "30": [
+        "https://web-scraping.dev/product/13?variant=orange-small": [
             2
         ],
-        "50": [
+        "https://web-scraping.dev/product/1?variant=cherry-large": [
             2
         ],
-        "51": [
+        "https://web-scraping.dev/product/1?variant=cherry-medium": [
             2
         ],
-        "52": [
+        "https://web-scraping.dev/product/1?variant=cherry-small": [
             2
         ],
-        "53": [
+        "https://web-scraping.dev/product/1?variant=orange-large": [
             2
         ],
-        "54": [
+        "https://web-scraping.dev/product/1?variant=orange-medium": [
             2
         ],
-        "55": [
+        "https://web-scraping.dev/product/1?variant=orange-small": [
             2
         ],
-        "88": [
+        "https://web-scraping.dev/product/25": [
             2
         ],
-        "89": [
+        "https://web-scraping.dev/product/25?variant=cherry-large": [
             2
         ],
-        "90": [
+        "https://web-scraping.dev/product/25?variant=cherry-medium": [
             2
         ],
-        "91": [
+        "https://web-scraping.dev/product/25?variant=cherry-small": [
             2
         ],
-        "92": [
+        "https://web-scraping.dev/product/25?variant=orange-large": [
             2
         ],
-        "93": [
+        "https://web-scraping.dev/product/25?variant=orange-medium": [
             2
         ],
-        "94": [
+        "https://web-scraping.dev/product/25?variant=orange-small": [
             2
         ]
     },
     "red": {
-        "2": [
+        "https://web-scraping.dev/product/16": [
             0
         ],
-        "31": [
+        "https://web-scraping.dev/product/14": [
             1
         ],
-        "32": [
+        "https://web-scraping.dev/product/14?variant=one": [
             1
         ],
-        "33": [
+        "https://web-scraping.dev/product/14?variant=six-pack": [
             1
         ],
-        "37": [
+        "https://web-scraping.dev/product/16?variant=one": [
             0
         ],
-        "38": [
+        "https://web-scraping.dev/product/16?variant=six-pack": [
             0
         ],
-        "56": [
+        "https://web-scraping.dev/product/2": [
             1
         ],
-        "95": [
+        "https://web-scraping.dev/product/26": [
             1
         ],
-        "96": [
+        "https://web-scraping.dev/product/26?variant=one": [
             1
         ],
-        "97": [
+        "https://web-scraping.dev/product/26?variant=six-pack": [
             1
         ],
-        "101": [
+        "https://web-scraping.dev/product/28": [
             0
         ],
-        "102": [
+        "https://web-scraping.dev/product/28?variant=one": [
             0
         ],
-        "103": [
+        "https://web-scraping.dev/product/28?variant=six-pack": [
             0
         ],
-        "104": [
+        "https://web-scraping.dev/product/2?variant=one": [
             1
         ],
-        "105": [
+        "https://web-scraping.dev/product/2?variant=six-pack": [
             1
         ],
-        "109": [
+        "https://web-scraping.dev/product/4": [
             0
         ],
-        "110": [
+        "https://web-scraping.dev/product/4?variant=one": [
             0
         ],
-        "111": [
+        "https://web-scraping.dev/product/4?variant=six-pack": [
             0
         ]
     },
     "energy": {
-        "2": [
+        "https://web-scraping.dev/product/16": [
             1
         ],
-        "31": [
+        "https://web-scraping.dev/product/14": [
             2
         ],
-        "32": [
+        "https://web-scraping.dev/product/14?variant=one": [
             2
         ],
-        "33": [
+        "https://web-scraping.dev/product/14?variant=six-pack": [
             2
         ],
-        "34": [
+        "https://web-scraping.dev/product/15": [
             1
         ],
-        "35": [
+        "https://web-scraping.dev/product/15?variant=one": [
             1
         ],
-        "36": [
+        "https://web-scraping.dev/product/15?variant=six-pack": [
             1
         ],
-        "37": [
+        "https://web-scraping.dev/product/16?variant=one": [
             1
         ],
-        "38": [
+        "https://web-scraping.dev/product/16?variant=six-pack": [
             1
         ],
-        "39": [
+        "https://web-scraping.dev/product/17": [
             1
         ],
-        "40": [
+        "https://web-scraping.dev/product/17?variant=one": [
             1
         ],
-        "41": [
+        "https://web-scraping.dev/product/17?variant=six-pack": [
             1
         ],
-        "42": [
+        "https://web-scraping.dev/product/18": [
             1
         ],
-        "43": [
+        "https://web-scraping.dev/product/18?variant=one": [
             1
         ],
-        "44": [
+        "https://web-scraping.dev/product/18?variant=six-pack": [
             1
         ],
-        "56": [
+        "https://web-scraping.dev/product/2": [
             2
         ],
-        "95": [
+        "https://web-scraping.dev/product/26": [
             2
         ],
-        "96": [
+        "https://web-scraping.dev/product/26?variant=one": [
             2
         ],
-        "97": [
+        "https://web-scraping.dev/product/26?variant=six-pack": [
             2
         ],
-        "98": [
+        "https://web-scraping.dev/product/27": [
             1
         ],
-        "99": [
+        "https://web-scraping.dev/product/27?variant=one": [
             1
         ],
-        "100": [
+        "https://web-scraping.dev/product/27?variant=six-pack": [
             1
         ],
-        "101": [
+        "https://web-scraping.dev/product/28": [
             1
         ],
-        "102": [
+        "https://web-scraping.dev/product/28?variant=one": [
             1
         ],
-        "103": [
+        "https://web-scraping.dev/product/28?variant=six-pack": [
             1
         ],
-        "104": [
+        "https://web-scraping.dev/product/2?variant=one": [
             2
         ],
-        "105": [
+        "https://web-scraping.dev/product/2?variant=six-pack": [
             2
         ],
-        "106": [
+        "https://web-scraping.dev/product/3": [
             1
         ],
-        "107": [
+        "https://web-scraping.dev/product/3?variant=one": [
             1
         ],
-        "108": [
+        "https://web-scraping.dev/product/3?variant=six-pack": [
             1
         ],
-        "109": [
+        "https://web-scraping.dev/product/4": [
             1
         ],
-        "110": [
+        "https://web-scraping.dev/product/4?variant=one": [
             1
         ],
-        "111": [
+        "https://web-scraping.dev/product/4?variant=six-pack": [
             1
         ],
-        "112": [
+        "https://web-scraping.dev/product/5": [
             1
         ],
-        "113": [
+        "https://web-scraping.dev/product/5?variant=one": [
             1
         ],
-        "114": [
+        "https://web-scraping.dev/product/5?variant=six-pack": [
             1
         ],
-        "115": [
+        "https://web-scraping.dev/product/6": [
             1
         ],
-        "116": [
+        "https://web-scraping.dev/product/6?variant=one": [
             1
         ],
-        "117": [
+        "https://web-scraping.dev/product/6?variant=six-pack": [
             1
         ]
     },
     "potion": {
-        "2": [
+        "https://web-scraping.dev/product/16": [
             2
         ],
-        "31": [
+        "https://web-scraping.dev/product/14": [
             3
         ],
-        "32": [
+        "https://web-scraping.dev/product/14?variant=one": [
             3
         ],
-        "33": [
+        "https://web-scraping.dev/product/14?variant=six-pack": [
             3
         ],
-        "34": [
+        "https://web-scraping.dev/product/15": [
             2
         ],
-        "35": [
+        "https://web-scraping.dev/product/15?variant=one": [
             2
         ],
-        "36": [
+        "https://web-scraping.dev/product/15?variant=six-pack": [
             2
         ],
-        "37": [
+        "https://web-scraping.dev/product/16?variant=one": [
             2
         ],
-        "38": [
+        "https://web-scraping.dev/product/16?variant=six-pack": [
             2
         ],
-        "39": [
+        "https://web-scraping.dev/product/17": [
             2
         ],
-        "40": [
+        "https://web-scraping.dev/product/17?variant=one": [
             2
         ],
-        "41": [
+        "https://web-scraping.dev/product/17?variant=six-pack": [
             2
         ],
-        "42": [
+        "https://web-scraping.dev/product/18": [
             2
         ],
-        "43": [
+        "https://web-scraping.dev/product/18?variant=one": [
             2
         ],
-        "44": [
+        "https://web-scraping.dev/product/18?variant=six-pack": [
             2
         ],
-        "56": [
+        "https://web-scraping.dev/product/2": [
             3
         ],
-        "95": [
+        "https://web-scraping.dev/product/26": [
             3
         ],
-        "96": [
+        "https://web-scraping.dev/product/26?variant=one": [
             3
         ],
-        "97": [
+        "https://web-scraping.dev/product/26?variant=six-pack": [
             3
         ],
-        "98": [
+        "https://web-scraping.dev/product/27": [
             2
         ],
-        "99": [
+        "https://web-scraping.dev/product/27?variant=one": [
             2
         ],
-        "100": [
+        "https://web-scraping.dev/product/27?variant=six-pack": [
             2
         ],
-        "101": [
+        "https://web-scraping.dev/product/28": [
             2
         ],
-        "102": [
+        "https://web-scraping.dev/product/28?variant=one": [
             2
         ],
-        "103": [
+        "https://web-scraping.dev/product/28?variant=six-pack": [
             2
         ],
-        "104": [
+        "https://web-scraping.dev/product/2?variant=one": [
             3
         ],
-        "105": [
+        "https://web-scraping.dev/product/2?variant=six-pack": [
             3
         ],
-        "106": [
+        "https://web-scraping.dev/product/3": [
             2
         ],
-        "107": [
+        "https://web-scraping.dev/product/3?variant=one": [
             2
         ],
-        "108": [
+        "https://web-scraping.dev/product/3?variant=six-pack": [
             2
         ],
-        "109": [
+        "https://web-scraping.dev/product/4": [
             2
         ],
-        "110": [
+        "https://web-scraping.dev/product/4?variant=one": [
             2
         ],
-        "111": [
+        "https://web-scraping.dev/product/4?variant=six-pack": [
             2
         ],
-        "112": [
+        "https://web-scraping.dev/product/5": [
             2
         ],
-        "113": [
+        "https://web-scraping.dev/product/5?variant=one": [
             2
         ],
-        "114": [
+        "https://web-scraping.dev/product/5?variant=six-pack": [
             2
         ],
-        "115": [
+        "https://web-scraping.dev/product/6": [
             2
         ],
-        "116": [
+        "https://web-scraping.dev/product/6?variant=one": [
             2
         ],
-        "117": [
+        "https://web-scraping.dev/product/6?variant=six-pack": [
             2
         ]
     },
     "kids": {
-        "3": [
+        "https://web-scraping.dev/product/10": [
             0
         ],
-        "4": [
+        "https://web-scraping.dev/product/10?variant=blue-5": [
             0
         ],
-        "5": [
+        "https://web-scraping.dev/product/10?variant=blue-6": [
             0
         ],
-        "6": [
+        "https://web-scraping.dev/product/10?variant=red-5": [
             0
         ],
-        "7": [
+        "https://web-scraping.dev/product/10?variant=red-6": [
             0
         ],
-        "67": [
+        "https://web-scraping.dev/product/22": [
             0
         ],
-        "68": [
+        "https://web-scraping.dev/product/22?variant=blue-5": [
             0
         ],
-        "69": [
+        "https://web-scraping.dev/product/22?variant=blue-6": [
             0
         ],
-        "70": [
+        "https://web-scraping.dev/product/22?variant=red-5": [
             0
         ],
-        "71": [
+        "https://web-scraping.dev/product/22?variant=red-6": [
             0
         ]
     },
     "lightup": {
-        "3": [
+        "https://web-scraping.dev/product/10": [
             1
         ],
-        "4": [
+        "https://web-scraping.dev/product/10?variant=blue-5": [
             1
         ],
-        "5": [
+        "https://web-scraping.dev/product/10?variant=blue-6": [
             1
         ],
-        "6": [
+        "https://web-scraping.dev/product/10?variant=red-5": [
             1
         ],
-        "7": [
+        "https://web-scraping.dev/product/10?variant=red-6": [
             1
         ],
-        "67": [
+        "https://web-scraping.dev/product/22": [
             1
         ],
-        "68": [
+        "https://web-scraping.dev/product/22?variant=blue-5": [
             1
         ],
-        "69": [
+        "https://web-scraping.dev/product/22?variant=blue-6": [
             1
         ],
-        "70": [
+        "https://web-scraping.dev/product/22?variant=red-5": [
             1
         ],
-        "71": [
+        "https://web-scraping.dev/product/22?variant=red-6": [
             1
         ]
     },
     "sneakers": {
-        "3": [
+        "https://web-scraping.dev/product/10": [
             2
         ],
-        "4": [
+        "https://web-scraping.dev/product/10?variant=blue-5": [
             2
         ],
-        "5": [
+        "https://web-scraping.dev/product/10?variant=blue-6": [
             2
         ],
-        "6": [
+        "https://web-scraping.dev/product/10?variant=red-5": [
             2
         ],
-        "7": [
+        "https://web-scraping.dev/product/10?variant=red-6": [
             2
         ],
-        "8": [
+        "https://web-scraping.dev/product/11": [
             2
         ],
-        "9": [
+        "https://web-scraping.dev/product/11?variant=black40": [
             2
         ],
-        "10": [
+        "https://web-scraping.dev/product/11?variant=black41": [
             2
         ],
-        "11": [
+        "https://web-scraping.dev/product/11?variant=black42": [
             2
         ],
-        "12": [
+        "https://web-scraping.dev/product/11?variant=white40": [
             2
         ],
-        "13": [
+        "https://web-scraping.dev/product/11?variant=white41": [
             2
         ],
-        "14": [
+        "https://web-scraping.dev/product/11?variant=white42": [
             2
         ],
-        "67": [
+        "https://web-scraping.dev/product/22": [
             2
         ],
-        "68": [
+        "https://web-scraping.dev/product/22?variant=blue-5": [
             2
         ],
-        "69": [
+        "https://web-scraping.dev/product/22?variant=blue-6": [
             2
         ],
-        "70": [
+        "https://web-scraping.dev/product/22?variant=red-5": [
             2
         ],
-        "71": [
+        "https://web-scraping.dev/product/22?variant=red-6": [
             2
         ],
-        "72": [
+        "https://web-scraping.dev/product/23": [
             2
         ],
-        "73": [
+        "https://web-scraping.dev/product/23?variant=black40": [
             2
         ],
-        "74": [
+        "https://web-scraping.dev/product/23?variant=black41": [
             2
         ],
-        "75": [
+        "https://web-scraping.dev/product/23?variant=black42": [
             2
         ],
-        "76": [
+        "https://web-scraping.dev/product/23?variant=white40": [
             2
         ],
-        "77": [
+        "https://web-scraping.dev/product/23?variant=white41": [
             2
         ],
-        "78": [
+        "https://web-scraping.dev/product/23?variant=white42": [
             2
         ]
     },
     "classic": {
-        "8": [
+        "https://web-scraping.dev/product/11": [
             0
         ],
-        "9": [
+        "https://web-scraping.dev/product/11?variant=black40": [
             0
         ],
-        "10": [
+        "https://web-scraping.dev/product/11?variant=black41": [
             0
         ],
-        "11": [
+        "https://web-scraping.dev/product/11?variant=black42": [
             0
         ],
-        "12": [
+        "https://web-scraping.dev/product/11?variant=white40": [
             0
         ],
-        "13": [
+        "https://web-scraping.dev/product/11?variant=white41": [
             0
         ],
-        "14": [
+        "https://web-scraping.dev/product/11?variant=white42": [
             0
         ],
-        "72": [
+        "https://web-scraping.dev/product/23": [
             0
         ],
-        "73": [
+        "https://web-scraping.dev/product/23?variant=black40": [
             0
         ],
-        "74": [
+        "https://web-scraping.dev/product/23?variant=black41": [
             0
         ],
-        "75": [
+        "https://web-scraping.dev/product/23?variant=black42": [
             0
         ],
-        "76": [
+        "https://web-scraping.dev/product/23?variant=white40": [
             0
         ],
-        "77": [
+        "https://web-scraping.dev/product/23?variant=white41": [
             0
         ],
-        "78": [
+        "https://web-scraping.dev/product/23?variant=white42": [
             0
         ]
     },
     "leather": {
-        "8": [
+        "https://web-scraping.dev/product/11": [
             1
         ],
-        "9": [
+        "https://web-scraping.dev/product/11?variant=black40": [
             1
         ],
-        "10": [
+        "https://web-scraping.dev/product/11?variant=black41": [
             1
         ],
-        "11": [
+        "https://web-scraping.dev/product/11?variant=black42": [
             1
         ],
-        "12": [
+        "https://web-scraping.dev/product/11?variant=white40": [
             1
         ],
-        "13": [
+        "https://web-scraping.dev/product/11?variant=white41": [
             1
         ],
-        "14": [
+        "https://web-scraping.dev/product/11?variant=white42": [
             1
         ],
-        "72": [
+        "https://web-scraping.dev/product/23": [
             1
         ],
-        "73": [
+        "https://web-scraping.dev/product/23?variant=black40": [
             1
         ],
-        "74": [
+        "https://web-scraping.dev/product/23?variant=black41": [
             1
         ],
-        "75": [
+        "https://web-scraping.dev/product/23?variant=black42": [
             1
         ],
-        "76": [
+        "https://web-scraping.dev/product/23?variant=white40": [
             1
         ],
-        "77": [
+        "https://web-scraping.dev/product/23?variant=white41": [
             1
         ],
-        "78": [
+        "https://web-scraping.dev/product/23?variant=white42": [
             1
         ]
     },
     "catear": {
-        "15": [
+        "https://web-scraping.dev/product/12": [
             0
         ],
-        "16": [
+        "https://web-scraping.dev/product/12?variant=darkgrey-medium": [
             0
         ],
-        "17": [
+        "https://web-scraping.dev/product/12?variant=darkgrey-small": [
             0
         ],
-        "18": [
+        "https://web-scraping.dev/product/12?variant=grey-medium": [
             0
         ],
-        "19": [
+        "https://web-scraping.dev/product/12?variant=grey-small": [
             0
         ],
-        "20": [
+        "https://web-scraping.dev/product/12?variant=pink-medium": [
             0
         ],
-        "21": [
+        "https://web-scraping.dev/product/12?variant=pink-small": [
             0
         ],
-        "22": [
+        "https://web-scraping.dev/product/12?variant=sand-medium": [
             0
         ],
-        "23": [
+        "https://web-scraping.dev/product/12?variant=sand-small": [
             0
         ],
-        "79": [
+        "https://web-scraping.dev/product/24": [
             0
         ],
-        "80": [
+        "https://web-scraping.dev/product/24?variant=darkgrey-medium": [
             0
         ],
-        "81": [
+        "https://web-scraping.dev/product/24?variant=darkgrey-small": [
             0
         ],
-        "82": [
+        "https://web-scraping.dev/product/24?variant=grey-medium": [
             0
         ],
-        "83": [
+        "https://web-scraping.dev/product/24?variant=grey-small": [
             0
         ],
-        "84": [
+        "https://web-scraping.dev/product/24?variant=pink-medium": [
             0
         ],
-        "85": [
+        "https://web-scraping.dev/product/24?variant=pink-small": [
             0
         ],
-        "86": [
+        "https://web-scraping.dev/product/24?variant=sand-medium": [
             0
         ],
-        "87": [
+        "https://web-scraping.dev/product/24?variant=sand-small": [
             0
         ]
     },
     "beanie": {
-        "15": [
+        "https://web-scraping.dev/product/12": [
             1
         ],
-        "16": [
+        "https://web-scraping.dev/product/12?variant=darkgrey-medium": [
             1
         ],
-        "17": [
+        "https://web-scraping.dev/product/12?variant=darkgrey-small": [
             1
         ],
-        "18": [
+        "https://web-scraping.dev/product/12?variant=grey-medium": [
             1
         ],
-        "19": [
+        "https://web-scraping.dev/product/12?variant=grey-small": [
             1
         ],
-        "20": [
+        "https://web-scraping.dev/product/12?variant=pink-medium": [
             1
         ],
-        "21": [
+        "https://web-scraping.dev/product/12?variant=pink-small": [
             1
         ],
-        "22": [
+        "https://web-scraping.dev/product/12?variant=sand-medium": [
             1
         ],
-        "23": [
+        "https://web-scraping.dev/product/12?variant=sand-small": [
             1
         ],
-        "79": [
+        "https://web-scraping.dev/product/24": [
             1
         ],
-        "80": [
+        "https://web-scraping.dev/product/24?variant=darkgrey-medium": [
             1
         ],
-        "81": [
+        "https://web-scraping.dev/product/24?variant=darkgrey-small": [
             1
         ],
-        "82": [
+        "https://web-scraping.dev/product/24?variant=grey-medium": [
             1
         ],
-        "83": [
+        "https://web-scraping.dev/product/24?variant=grey-small": [
             1
         ],
-        "84": [
+        "https://web-scraping.dev/product/24?variant=pink-medium": [
             1
         ],
-        "85": [
+        "https://web-scraping.dev/product/24?variant=pink-small": [
             1
         ],
-        "86": [
+        "https://web-scraping.dev/product/24?variant=sand-medium": [
             1
         ],
-        "87": [
+        "https://web-scraping.dev/product/24?variant=sand-small": [
             1
         ]
     },
     "dark": {
-        "31": [
+        "https://web-scraping.dev/product/14": [
             0
         ],
-        "32": [
+        "https://web-scraping.dev/product/14?variant=one": [
             0
         ],
-        "33": [
+        "https://web-scraping.dev/product/14?variant=six-pack": [
             0
         ],
-        "56": [
+        "https://web-scraping.dev/product/2": [
             0
         ],
-        "95": [
+        "https://web-scraping.dev/product/26": [
             0
         ],
-        "96": [
+        "https://web-scraping.dev/product/26?variant=one": [
             0
         ],
-        "97": [
+        "https://web-scraping.dev/product/26?variant=six-pack": [
             0
         ],
-        "104": [
+        "https://web-scraping.dev/product/2?variant=one": [
             0
         ],
-        "105": [
+        "https://web-scraping.dev/product/2?variant=six-pack": [
             0
         ]
     },
     "teal": {
-        "34": [
+        "https://web-scraping.dev/product/15": [
             0
         ],
-        "35": [
+        "https://web-scraping.dev/product/15?variant=one": [
             0
         ],
-        "36": [
+        "https://web-scraping.dev/product/15?variant=six-pack": [
             0
         ],
-        "98": [
+        "https://web-scraping.dev/product/27": [
             0
         ],
-        "99": [
+        "https://web-scraping.dev/product/27?variant=one": [
             0
         ],
-        "100": [
+        "https://web-scraping.dev/product/27?variant=six-pack": [
             0
         ],
-        "106": [
+        "https://web-scraping.dev/product/3": [
             0
         ],
-        "107": [
+        "https://web-scraping.dev/product/3?variant=one": [
             0
         ],
-        "108": [
+        "https://web-scraping.dev/product/3?variant=six-pack": [
             0
         ]
     },
     "blue": {
-        "39": [
+        "https://web-scraping.dev/product/17": [
             0
         ],
-        "40": [
+        "https://web-scraping.dev/product/17?variant=one": [
             0
         ],
-        "41": [
+        "https://web-scraping.dev/product/17?variant=six-pack": [
             0
         ],
-        "112": [
+        "https://web-scraping.dev/product/5": [
             0
         ],
-        "113": [
+        "https://web-scraping.dev/product/5?variant=one": [
             0
         ],
-        "114": [
+        "https://web-scraping.dev/product/5?variant=six-pack": [
             0
         ]
     },
     "dragon": {
-        "42": [
+        "https://web-scraping.dev/product/18": [
             0
         ],
-        "43": [
+        "https://web-scraping.dev/product/18?variant=one": [
             0
         ],
-        "44": [
+        "https://web-scraping.dev/product/18?variant=six-pack": [
             0
         ],
-        "115": [
+        "https://web-scraping.dev/product/6": [
             0
         ],
-        "116": [
+        "https://web-scraping.dev/product/6?variant=one": [
             0
         ],
-        "117": [
+        "https://web-scraping.dev/product/6?variant=six-pack": [
             0
         ]
     },
     "hiking": {
-        "45": [
+        "https://web-scraping.dev/product/19": [
             0
         ],
-        "46": [
+        "https://web-scraping.dev/product/19?variant=6": [
             0
         ],
-        "47": [
+        "https://web-scraping.dev/product/19?variant=7": [
             0
         ],
-        "48": [
+        "https://web-scraping.dev/product/19?variant=8": [
             0
         ],
-        "49": [
+        "https://web-scraping.dev/product/19?variant=9": [
             0
         ],
-        "118": [
+        "https://web-scraping.dev/product/7": [
             0
         ],
-        "119": [
+        "https://web-scraping.dev/product/7?variant=6": [
             0
         ],
-        "120": [
+        "https://web-scraping.dev/product/7?variant=7": [
             0
         ],
-        "121": [
+        "https://web-scraping.dev/product/7?variant=8": [
             0
         ],
-        "122": [
+        "https://web-scraping.dev/product/7?variant=9": [
             0
         ]
     },
     "boots": {
-        "45": [
+        "https://web-scraping.dev/product/19": [
             1
         ],
-        "46": [
+        "https://web-scraping.dev/product/19?variant=6": [
             1
         ],
-        "47": [
+        "https://web-scraping.dev/product/19?variant=7": [
             1
         ],
-        "48": [
+        "https://web-scraping.dev/product/19?variant=8": [
             1
         ],
-        "49": [
+        "https://web-scraping.dev/product/19?variant=9": [
             1
         ],
-        "118": [
+        "https://web-scraping.dev/product/7": [
             1
         ],
-        "119": [
+        "https://web-scraping.dev/product/7?variant=6": [
             1
         ],
-        "120": [
+        "https://web-scraping.dev/product/7?variant=7": [
             1
         ],
-        "121": [
+        "https://web-scraping.dev/product/7?variant=8": [
             1
         ],
-        "122": [
+        "https://web-scraping.dev/product/7?variant=9": [
             1
         ]
     },
     "outdoor": {
-        "45": [
+        "https://web-scraping.dev/product/19": [
             2
         ],
-        "46": [
+        "https://web-scraping.dev/product/19?variant=6": [
             2
         ],
-        "47": [
+        "https://web-scraping.dev/product/19?variant=7": [
             2
         ],
-        "48": [
+        "https://web-scraping.dev/product/19?variant=8": [
             2
         ],
-        "49": [
+        "https://web-scraping.dev/product/19?variant=9": [
             2
         ],
-        "118": [
+        "https://web-scraping.dev/product/7": [
             2
         ],
-        "119": [
+        "https://web-scraping.dev/product/7?variant=6": [
             2
         ],
-        "120": [
+        "https://web-scraping.dev/product/7?variant=7": [
             2
         ],
-        "121": [
+        "https://web-scraping.dev/product/7?variant=8": [
             2
         ],
-        "122": [
+        "https://web-scraping.dev/product/7?variant=9": [
             2
         ]
     },
     "adventures": {
-        "45": [
+        "https://web-scraping.dev/product/19": [
             3
         ],
-        "46": [
+        "https://web-scraping.dev/product/19?variant=6": [
             3
         ],
-        "47": [
+        "https://web-scraping.dev/product/19?variant=7": [
             3
         ],
-        "48": [
+        "https://web-scraping.dev/product/19?variant=8": [
             3
         ],
-        "49": [
+        "https://web-scraping.dev/product/19?variant=9": [
             3
         ],
-        "118": [
+        "https://web-scraping.dev/product/7": [
             3
         ],
-        "119": [
+        "https://web-scraping.dev/product/7?variant=6": [
             3
         ],
-        "120": [
+        "https://web-scraping.dev/product/7?variant=7": [
             3
         ],
-        "121": [
+        "https://web-scraping.dev/product/7?variant=8": [
             3
         ],
-        "122": [
+        "https://web-scraping.dev/product/7?variant=9": [
             3
         ]
     },
     "womens": {
-        "57": [
+        "https://web-scraping.dev/product/20": [
             0
         ],
-        "58": [
+        "https://web-scraping.dev/product/20?variant=beige-6": [
             0
         ],
-        "59": [
+        "https://web-scraping.dev/product/20?variant=beige-7": [
             0
         ],
-        "60": [
+        "https://web-scraping.dev/product/20?variant=beige-8": [
             0
         ],
-        "61": [
+        "https://web-scraping.dev/product/20?variant=blue-9": [
             0
         ],
-        "123": [
+        "https://web-scraping.dev/product/8": [
             0
         ],
-        "124": [
+        "https://web-scraping.dev/product/8?variant=beige-6": [
             0
         ],
-        "125": [
+        "https://web-scraping.dev/product/8?variant=beige-7": [
             0
         ],
-        "126": [
+        "https://web-scraping.dev/product/8?variant=beige-8": [
             0
         ],
-        "127": [
+        "https://web-scraping.dev/product/8?variant=blue-9": [
             0
         ]
     },
     "high": {
-        "57": [
+        "https://web-scraping.dev/product/20": [
             1
         ],
-        "58": [
+        "https://web-scraping.dev/product/20?variant=beige-6": [
             1
         ],
-        "59": [
+        "https://web-scraping.dev/product/20?variant=beige-7": [
             1
         ],
-        "60": [
+        "https://web-scraping.dev/product/20?variant=beige-8": [
             1
         ],
-        "61": [
+        "https://web-scraping.dev/product/20?variant=blue-9": [
             1
         ],
-        "123": [
+        "https://web-scraping.dev/product/8": [
             1
         ],
-        "124": [
+        "https://web-scraping.dev/product/8?variant=beige-6": [
             1
         ],
-        "125": [
+        "https://web-scraping.dev/product/8?variant=beige-7": [
             1
         ],
-        "126": [
+        "https://web-scraping.dev/product/8?variant=beige-8": [
             1
         ],
-        "127": [
+        "https://web-scraping.dev/product/8?variant=blue-9": [
             1
         ]
     },
     "heel": {
-        "57": [
+        "https://web-scraping.dev/product/20": [
             2
         ],
-        "58": [
+        "https://web-scraping.dev/product/20?variant=beige-6": [
             2
         ],
-        "59": [
+        "https://web-scraping.dev/product/20?variant=beige-7": [
             2
         ],
-        "60": [
+        "https://web-scraping.dev/product/20?variant=beige-8": [
             2
         ],
-        "61": [
+        "https://web-scraping.dev/product/20?variant=blue-9": [
             2
         ],
-        "123": [
+        "https://web-scraping.dev/product/8": [
             2
         ],
-        "124": [
+        "https://web-scraping.dev/product/8?variant=beige-6": [
             2
         ],
-        "125": [
+        "https://web-scraping.dev/product/8?variant=beige-7": [
             2
         ],
-        "126": [
+        "https://web-scraping.dev/product/8?variant=beige-8": [
             2
         ],
-        "127": [
+        "https://web-scraping.dev/product/8?variant=blue-9": [
             2
         ]
     },
     "sandals": {
-        "57": [
+        "https://web-scraping.dev/product/20": [
             3
         ],
-        "58": [
+        "https://web-scraping.dev/product/20?variant=beige-6": [
             3
         ],
-        "59": [
+        "https://web-scraping.dev/product/20?variant=beige-7": [
             3
         ],
-        "60": [
+        "https://web-scraping.dev/product/20?variant=beige-8": [
             3
         ],
-        "61": [
+        "https://web-scraping.dev/product/20?variant=blue-9": [
             3
         ],
-        "123": [
+        "https://web-scraping.dev/product/8": [
             3
         ],
-        "124": [
+        "https://web-scraping.dev/product/8?variant=beige-6": [
             3
         ],
-        "125": [
+        "https://web-scraping.dev/product/8?variant=beige-7": [
             3
         ],
-        "126": [
+        "https://web-scraping.dev/product/8?variant=beige-8": [
             3
         ],
-        "127": [
+        "https://web-scraping.dev/product/8?variant=blue-9": [
             3
         ]
     },
     "running": {
-        "62": [
+        "https://web-scraping.dev/product/21": [
             0
         ],
-        "63": [
+        "https://web-scraping.dev/product/21?variant=10": [
             0
         ],
-        "64": [
+        "https://web-scraping.dev/product/21?variant=11": [
             0
         ],
-        "65": [
+        "https://web-scraping.dev/product/21?variant=12": [
             0
         ],
-        "66": [
+        "https://web-scraping.dev/product/21?variant=9": [
             0
         ],
-        "128": [
+        "https://web-scraping.dev/product/9": [
             0
         ],
-        "129": [
+        "https://web-scraping.dev/product/9?variant=10": [
             0
         ],
-        "130": [
+        "https://web-scraping.dev/product/9?variant=11": [
             0
         ],
-        "131": [
+        "https://web-scraping.dev/product/9?variant=12": [
             0
         ],
-        "132": [
+        "https://web-scraping.dev/product/9?variant=9": [
             0
         ]
     },
     "shoes": {
-        "62": [
+        "https://web-scraping.dev/product/21": [
             1
         ],
-        "63": [
+        "https://web-scraping.dev/product/21?variant=10": [
             1
         ],
-        "64": [
+        "https://web-scraping.dev/product/21?variant=11": [
             1
         ],
-        "65": [
+        "https://web-scraping.dev/product/21?variant=12": [
             1
         ],
-        "66": [
+        "https://web-scraping.dev/product/21?variant=9": [
             1
         ],
-        "128": [
+        "https://web-scraping.dev/product/9": [
             1
         ],
-        "129": [
+        "https://web-scraping.dev/product/9?variant=10": [
             1
         ],
-        "130": [
+        "https://web-scraping.dev/product/9?variant=11": [
             1
         ],
-        "131": [
+        "https://web-scraping.dev/product/9?variant=12": [
             1
         ],
-        "132": [
+        "https://web-scraping.dev/product/9?variant=9": [
             1
         ]
     },
     "men": {
-        "62": [
+        "https://web-scraping.dev/product/21": [
             2
         ],
-        "63": [
+        "https://web-scraping.dev/product/21?variant=10": [
             2
         ],
-        "64": [
+        "https://web-scraping.dev/product/21?variant=11": [
             2
         ],
-        "65": [
+        "https://web-scraping.dev/product/21?variant=12": [
             2
         ],
-        "66": [
+        "https://web-scraping.dev/product/21?variant=9": [
             2
         ],
-        "128": [
+        "https://web-scraping.dev/product/9": [
             2
         ],
-        "129": [
+        "https://web-scraping.dev/product/9?variant=10": [
             2
         ],
-        "130": [
+        "https://web-scraping.dev/product/9?variant=11": [
             2
         ],
-        "131": [
+        "https://web-scraping.dev/product/9?variant=12": [
             2
         ],
-        "132": [
+        "https://web-scraping.dev/product/9?variant=9": [
             2
         ]
     },
     "2": {
-        "135": [
+        "https://web-scraping.dev/products?category=apparel&page=2": [
             3
         ],
-        "141": [
+        "https://web-scraping.dev/products?category=consumables&page=2": [
             3
         ],
-        "147": [
+        "https://web-scraping.dev/products?category=household&page=2": [
             3
         ],
-        "152": [
+        "https://web-scraping.dev/products?page=2": [
             3
         ]
     },
     "3": {
-        "136": [
+        "https://web-scraping.dev/products?category=apparel&page=3": [
             3
         ],
-        "142": [
+        "https://web-scraping.dev/products?category=consumables&page=3": [
             3
         ],
-        "148": [
+        "https://web-scraping.dev/products?category=household&page=3": [
             3
         ],
-        "153": [
+        "https://web-scraping.dev/products?page=3": [
             3
         ]
     },
     "4": {
-        "137": [
+        "https://web-scraping.dev/products?category=apparel&page=4": [
             3
         ],
-        "143": [
+        "https://web-scraping.dev/products?category=consumables&page=4": [
             3
         ],
-        "149": [
+        "https://web-scraping.dev/products?category=household&page=4": [
             3
         ],
-        "154": [
+        "https://web-scraping.dev/products?page=4": [
             3
         ]
     },
     "5": {
-        "138": [
+        "https://web-scraping.dev/products?category=apparel&page=5": [
             3
         ],
-        "144": [
+        "https://web-scraping.dev/products?category=consumables&page=5": [
             3
         ],
-        "150": [
+        "https://web-scraping.dev/products?category=household&page=5": [
             3
         ],
-        "155": [
+        "https://web-scraping.dev/products?page=5": [
             3
         ]
     }
