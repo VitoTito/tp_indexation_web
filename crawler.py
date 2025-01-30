@@ -7,6 +7,7 @@ from urllib.parse import urljoin, urlparse
 from urllib.robotparser import RobotFileParser
 from urllib.error import URLError, HTTPError
 
+
 def can_fetch(url, user_agent="CrawlerIndexationWeb/1.0"):
     """
     Checks if the site allows crawling by reading the robots.txt file.
@@ -40,6 +41,7 @@ def can_fetch(url, user_agent="CrawlerIndexationWeb/1.0"):
         print(f"Unable to read robots.txt: {e}")
         return False
 
+
 def fetch_url(url):
     """
     Makes HTTP requests and retrieves the HTML of a page.
@@ -71,6 +73,7 @@ def fetch_url(url):
     except URLError as e:
         print(f"Connection error: {e.reason} while requesting {url}")
     return None
+
 
 def extract_data(html, base_url):
     """
@@ -142,6 +145,7 @@ def extract_data(html, base_url):
         "links": links
     }
 
+
 def get_priority(url):
     """
     Defines the priority of URLs to ensure a coherent order.
@@ -168,6 +172,7 @@ def get_priority(url):
         return 0  # Main product pages have the highest priority
     else:
         return 1  # Other site pages
+
 
 def crawl(seed_url, max_pages=50):
     """
@@ -226,12 +231,14 @@ def crawl(seed_url, max_pages=50):
 
     print(f"Crawl completed. {len(visited)} pages explored.")
 
+
 # Tests on a few different starting pages
 crawl("https://web-scraping.dev/review-policy", max_pages=10)
 crawl("https://web-scraping.dev/", max_pages=15)
 crawl("https://web-scraping.dev/testimonials", max_pages=20)
 
 # The results show that pages with 'product' in the URL are prioritized.
+
 
 # Final crawler launch
 crawl("https://web-scraping.dev/products")
