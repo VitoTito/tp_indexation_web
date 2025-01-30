@@ -3,9 +3,6 @@ from engine import process_query, load_json_file
 
 # Load index data from JSON files
 paths = {
-    "brand": 'index_provided/brand_index.json',
-    "description": 'index_provided/description_index.json',
-    "domain": 'index_provided/domain_index.json',
     "origin": 'index_provided/origin_index.json',
     "synonyms": 'index_provided/origin_synonyms.json',
     "reviews": 'index_provided/reviews_index.json',
@@ -18,8 +15,14 @@ origin_synonyms = load_json_file(paths["synonyms"])
 title_index = load_json_file(paths["title"])
 review_index = load_json_file(paths["reviews"])
 
+
+
+
 # Request
 test_query = "Dragon Energy Potion"
+
+
+
 
 # Call the search function
 ranked_results = process_query(
