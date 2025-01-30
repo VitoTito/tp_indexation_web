@@ -1,244 +1,322 @@
-import time
 import json
-import queue
-import urllib
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin, urlparse
-from urllib.robotparser import RobotFileParser
-from urllib.error import URLError, HTTPError
+import re
+import string
+import os
+from urllib.parse import urlparse, parse_qs
+from collections import defaultdict
 
+# Input and output files
+INPUT_FILE = "products.jsonl"
+PROCESSED_FILE = "processed_products.jsonl"
+INDEX_FOLDER = "index"  # Directory for saving index files
 
-def can_fetch(url, user_agent="CrawlerIndexationWeb/1.0"):
+# Common English stopwords
+STOPWORDS = set(["the", "a", "an", "and", "or", "of", "to", "in", "on", "with", "for", "by", "at", "from", 
+                 "is", "it", "this", "that", "as", "are", "was", "were", "be", "been", "has", "have", "had"])
+
+def extract_product_info_from_url(url):
     """
-    Vérifie si le site autorise le crawl en lisant le fichier robots.txt.
+    Extracts the product ID and variant (if any) from a given URL.
 
-    Attributs
+    Parameters
     ----------
     url : str
-        URL de la page que l'on souhaite crawler.
-    user_agent : str, optionnel
-        User-Agent utilisé pour la requête HTTP. Par défaut, "CrawlerIndexationWeb/1.0".
+        The URL of the product page to parse.
 
     Returns
-    --------
-    bool
-        Retourne True si le crawl est autorisé, sinon False.
-
-    Détails de l'implémentation
-    ----------------------------
-    La fonction utilise la classe `RobotFileParser` pour lire le fichier `robots.txt`
-    du site et vérifier si le crawl est autorisé pour l'URL spécifiée.
-    """
-    parsed_url = urlparse(url)
-    robots_url = f"{parsed_url.scheme}://{parsed_url.netloc}/robots.txt"
-
-    rp = RobotFileParser()
-    try:
-        rp.set_url(robots_url)
-        rp.read()
-        return rp.can_fetch(user_agent, url)
-    except Exception as e:
-        print(f"Impossible de lire robots.txt : {e}")
-        return False
-
-
-def fetch_url(url):
-    """
-    Effectue des requêtes HTTP et récupère le HTML d'une page.
-
-    Attributs
-    ----------
-    url : str
-        URL de la page à récupérer.
-
-    Returns
-    --------
-    str | None
-        Retourne le contenu HTML de la page sous forme de chaîne de caractères,
-        ou None en cas d'échec de la requête.
-
-    Détails de l'implémentation
-    ----------------------------
-    La fonction effectue une requête HTTP à l'URL spécifiée en utilisant la
-    bibliothèque `urllib`. Elle gère les erreurs HTTP et de connexion et 
-    retourne le contenu HTML de la page.
-    """
-    try:
-        headers = {"User-Agent": "CrawlerIndexationWeb/1.0"}
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req) as response:
-            return response.read().decode('utf-8')
-    except HTTPError as e:
-        print(f"Erreur HTTP {e.code} lors de la requête vers {url}")
-    except URLError as e:
-        print(f"Erreur de connexion : {e.reason} lors de la requête vers {url}")
-    return None
-
-
-def extract_data(html, base_url):
-    """
-    Extrait le titre, le premier paragraphe et les liens internes d'une page.
-
-    Attributs
-    ----------
-    html : str
-        Contenu HTML de la page à analyser.
-    base_url : str
-        URL de la page de base (utilisée pour résoudre les liens relatifs).
-
-    Retourne
-    --------
+    -------
     dict
-        Un dictionnaire contenant :
-        - "title" : titre de la page (str),
-        - "url" : URL de la page (str),
-        - "first_paragraph" : premier paragraphe de la page (str),
-        - "links" : liste des liens internes (list).
-
-    Détails de l'implémentation
-    ----------------------------
-    La fonction utilise BeautifulSoup pour analyser le contenu HTML et en extraire
-    les informations suivantes :
-    - Le titre de la page : priorité donnée à la balise `<title>`, puis à la balise `<h1>`, 
-      et enfin à un attribut `<meta name="og:title">`.
-    - Le premier paragraphe de la page : extrait de la première balise `<p>`.
-    - La liste des liens internes : tous les liens (`<a href="...">`) dont l'URL correspond au même domaine.
+        A dictionary containing the 'product_id' and 'variant_id' (if available).
     """
-    soup = BeautifulSoup(html, "html.parser")
+    try:
+        match = re.search(r"/product/(\d+)", url)
+        product_id = match.group(1) if match else None
 
-    # On recherche le titre dans la balise <title> (par défaut)
-    title = soup.title.string.strip() if soup.title else None
+        parsed_url = urlparse(url)
+        query_params = parse_qs(parsed_url.query)
+        
+        variant_id = query_params["variant"][0] if "variant" in query_params else None
 
-    # On recherche le titre dans une balise <h1> si <title> est vide ou invalide
-    if not title:
-        h1_tag = soup.find("h1")
-        if h1_tag:
-            title = h1_tag.get_text().strip()
+        return {"product_id": product_id, "variant": variant_id}
+    except Exception as e:
+        print(f"Error parsing URL: {url}. Error: {e}")
+        return {"product_id": None, "variant": None}
 
-    # Si le titre n'est toujours pas trouvé, on utilise une autre méthode comme <meta name="og:title">
-    if not title:
-        meta_title = soup.find("meta", attrs={"property": "og:title"})
-        if meta_title and meta_title.get("content"):
-            title = meta_title["content"].strip()
-
-    # Si aucun titre valide n'est trouvé, on met un titre par défaut
-    if not title:
-        title = "Sans titre"
-
-    first_paragraph = ""
-    p_tag = soup.find("p")
-    if p_tag:
-        first_paragraph = p_tag.get_text().strip()
-
-    links = []
-    for a_tag in soup.find_all("a", href=True):
-        href = a_tag["href"]
-        full_url = urljoin(base_url, href)
-
-        if urlparse(full_url).netloc == urlparse(base_url).netloc:
-            links.append(full_url)
-
-    return {
-        "title": title,
-        "url": base_url,
-        "first_paragraph": first_paragraph,
-        "links": links
-    }
-
-
-def get_priority(url):
+def load_data_from_file(filename):
     """
-    Définit la priorité des URLs pour assurer un ordre cohérent.
+    Loads product data from a JSONL file.
 
-    Attributs
+    Parameters
     ----------
-    url : str
-        URL de la page à analyser.
+    filename : str
+        The path to the JSONL file containing the product data.
 
-    Retourne
-    --------
-    int
-        Priorité sous forme de nombre entier (0, 1, 2, 3).
-
-    Détails de l'implémentation
-    ----------------------------
-    La fonction attribue une priorité à chaque URL en fonction de son type :
-    - Priorité 0 : Pages produits principales.
-    - Priorité 1 : Pages catégories produits.
-    - Priorité 2 : Pages variantes des produits.
-    - Priorité 3 : Autres pages du site.
+    Returns
+    -------
+    list
+        A list of raw product data dictionaries from the file.
     """
-    if "product/" in url:
-        return 0  # Pages produits principales en priorité
-    else:
-        return 1  # Autres pages du site
+    if not os.path.exists(filename):
+        print(f"Error: The file {filename} does not exist.")
+        return []
+    
+    product_data = []
+    try:
+        with open(filename, "r", encoding="utf-8") as file:
+            for line in file:
+                try:
+                    doc = json.loads(line.strip())
+                    product_data.append(doc)
+                except json.JSONDecodeError as e:
+                    print(f"Error decoding JSON line: {line}. Error: {e}")
+                    continue
+    except Exception as e:
+        print(f"Error reading file {filename}: {e}")
+    
+    return product_data
 
-
-def crawl(seed_url, max_pages=50):
+def process_data(data):
     """
-    Crawler qui explore les pages en priorisant les liens produits.
+    Processes raw product data by extracting product IDs and variants from URLs.
 
-    Attributs
+    Parameters
     ----------
-    seed_url : str
-        URL de départ à partir de laquelle commencer le crawl. 
-    max_pages : int, optionnel
-        Nombre maximal de pages à explorer. Par défaut, 50 pages.
+    data : list
+        A list of raw product data dictionaries.
 
-    Retourne
-    --------
-    None
-        Cette fonction ne retourne aucune valeur, mais elle génère un fichier `output.json`
-        contenant les informations collectées.
-
-    Détails de l'implémentation
-    ----------------------------
-    La fonction commence par la page de départ spécifiée, puis explore les pages liées
-    en suivant une logique de priorité basée sur la nature des pages. Elle récupère
-    le titre, le premier paragraphe et les liens internes de chaque page visitée, et
-    enregistre ces informations dans un fichier JSON. Elle arrête le crawl après avoir
-    visité un maximum de 50 pages ou lorsque toutes les pages pertinentes ont été explorées.
+    Returns
+    -------
+    list
+        A list of processed product data, with added product_id and variant_id fields.
     """
-    visited = set()
-    to_visit = queue.PriorityQueue()
-    to_visit.put((0, seed_url))  # On met la priorité haute pour la première page
-    data_collected = []
+    processed_data = []
+    
+    for doc in data:
+        doc.update(extract_product_info_from_url(doc.get("url", "")))
+        processed_data.append(doc)
+    
+    return processed_data
 
-    while not to_visit.empty() and len(visited) < max_pages:
-        _, url = to_visit.get()
-        if url in visited or not can_fetch(url):
-            continue
+def save_data_to_file(data, output_file=PROCESSED_FILE):
+    """
+    Saves processed product data to a JSONL file.
 
-        print(f"Crawling : {url}")
-        html = fetch_url(url)
-        if not html:
-            continue
+    Parameters
+    ----------
+    data : list
+        The list of processed product data to save.
+    output_file : str, optional
+        The path to the output JSONL file (default is 'processed_products.jsonl').
+    """
+    try:
+        with open(output_file, "w", encoding="utf-8") as file:
+            for doc in data:
+                file.write(json.dumps(doc, ensure_ascii=False) + "\n")
+    except Exception as e:
+        print(f"Error saving processed data to {output_file}: {e}")
 
-        extracted_data = extract_data(html, url)
-        data_collected.append(extracted_data)
-        visited.add(url)
+def tokenize_text(text):
+    """
+    Tokenizes a given text by removing punctuation and stopwords.
 
-        # On ajoute les nouveaux liens avec une priorité adaptée
-        for link in extracted_data["links"]:
-            if link not in visited:
-                to_visit.put((get_priority(link), link))
+    Parameters
+    ----------
+    text : str
+        The text to tokenize.
 
-        time.sleep(1)  # La politesse pour éviter d'être bloqué
+    Returns
+    -------
+    list
+        A list of tokens (words) that are not stopwords.
+    """
+    if not text:
+        return []
+    
+    text = text.lower()
+    text = text.translate(str.maketrans('', '', string.punctuation))
+    tokens = text.split()
+    return [token for token in tokens if token not in STOPWORDS]
 
-    # On sauvegarde des résultats dans un fichier JSON
-    with open("output.json", "w", encoding="utf-8") as f:
-        json.dump(data_collected, f, indent=4, ensure_ascii=False)
+def build_inverted_index_with_positions(field, data):
+    """
+    Builds an inverted index from a given field, including positions of words in the documents.
 
-    print(f"Crawl terminé. {len(visited)} pages explorées.")
+    Parameters
+    ----------
+    field : str
+        The field in the product data to index (e.g., 'title', 'description').
+    data : list
+        A list of dictionaries containing the product data to index.
 
+    Returns
+    -------
+    dict
+        An inverted index where each token maps to a dictionary of document IDs
+        and the positions of the token within those documents.
+    """
+    inverted_index = defaultdict(lambda: defaultdict(list))  # Token -> document_id -> positions
+    
+    for doc_id, doc in enumerate(data):
+        field_value = doc.get(field, "")
+        tokens = tokenize_text(field_value)
+        for position, token in enumerate(tokens):
+            inverted_index[token][doc_id].append(position)
+    
+    return {token: {doc_id: positions for doc_id, positions in doc_ids.items()} for token, doc_ids in inverted_index.items()}
 
-# Tests sur quelques différentes pages de départ
-crawl("https://web-scraping.dev/review-policy", max_pages=10)
-crawl("https://web-scraping.dev/", max_pages=15)
-crawl("https://web-scraping.dev/testimonials", max_pages=20)
+def save_index_to_file(index, filename):
+    """
+    Saves an inverted index to a JSON file.
 
-# Les résultats montrent que l'on priorise bien les pages ayant 'product' dans l'URL.
+    Parameters
+    ----------
+    index : dict
+        The inverted index to save.
+    filename : str
+        The path to the output JSON file.
+    """
+    if not os.path.exists(INDEX_FOLDER):
+        os.makedirs(INDEX_FOLDER)  # Ensure that the index folder exists
 
+    try:
+        with open(os.path.join(INDEX_FOLDER, filename), "w", encoding="utf-8") as file:
+            json.dump(index, file, indent=4, ensure_ascii=False)
+    except Exception as e:
+        print(f"Error saving index to {filename}: {e}")
 
-# Lancement du crawler final
-crawl("https://web-scraping.dev/products")
+def build_reviews_index(data):
+    """
+    Builds an index for reviews with total count, average rating, and last rating.
+
+    Parameters
+    ----------
+    data : list
+        A list of product data dictionaries containing review information.
+
+    Returns
+    -------
+    dict
+        An index where each document ID maps to a dictionary containing the total number of reviews,
+        the average rating, and the last rating for the product.
+    """
+    reviews_index = {}
+    
+    for doc_id, doc in enumerate(data):
+        reviews = doc.get("product_reviews", [])
+        
+        if reviews:
+            try:
+                total_reviews = len(reviews)
+                average_rating = sum(review.get("rating", 0) for review in reviews) / total_reviews
+                last_rating = reviews[-1].get("rating") if reviews else None
+                
+                reviews_index[doc_id] = {
+                    "total_reviews": total_reviews,
+                    "average_rating": average_rating,
+                    "last_rating": last_rating
+                }
+            except Exception as e:
+                print(f"Error processing reviews for product ID {doc_id}. Error: {e}")
+        else:
+            print(f"No reviews for product ID {doc_id}")
+    
+    return reviews_index
+
+def save_reviews_index_to_file(reviews_index, filename="reviews_index.json"):
+    """
+    Saves the reviews index to a JSON file.
+
+    Parameters
+    ----------
+    reviews_index : dict
+        The reviews index to save.
+    filename : str, optional
+        The path to the output JSON file (default is 'reviews_index.json').
+    """
+    try:
+        with open(os.path.join(INDEX_FOLDER, filename), "w", encoding="utf-8") as file:
+            json.dump(reviews_index, file, indent=4, ensure_ascii=False)
+    except Exception as e:
+        print(f"Error saving reviews index to {filename}: {e}")
+
+def build_features_index(data):
+    """
+    Builds an inverted index for product features such as brand, origin, etc.
+
+    Parameters
+    ----------
+    data : list
+        A list of product data dictionaries containing feature information.
+
+    Returns
+    -------
+    dict
+        An inverted index where each token in the feature values maps to a set of document IDs.
+    """
+    features_index = defaultdict(set)
+
+    for doc_id, doc in enumerate(data):
+        features = doc.get("product_features", {})
+        
+        for feature_name, feature_value in features.items():
+            if feature_value:
+                tokens = tokenize_text(str(feature_value))
+                for token in tokens:
+                    features_index[token].add(doc_id)
+
+    return {token: list(doc_ids) for token, doc_ids in features_index.items()}
+
+def save_features_index_to_file(features_index, filename="features_index.json"):
+    """
+    Saves the features index to a JSON file.
+
+    Parameters
+    ----------
+    features_index : dict
+        The features index to save.
+    filename : str, optional
+        The path to the output JSON file (default is 'features_index.json').
+    """
+    try:
+        with open(os.path.join(INDEX_FOLDER, filename), "w", encoding="utf-8") as file:
+            json.dump(features_index, file, indent=4, ensure_ascii=False)
+    except Exception as e:
+        print(f"Error saving features index to {filename}: {e}")
+
+def run_main_pipeline():
+    """
+    Main pipeline that processes product data, extracts product information, and builds inverted indices.
+    
+    This function loads product data from a JSONL file, extracts information like product IDs,
+    variants, and reviews, and then builds inverted indices for product titles, descriptions, and features.
+    Finally, it saves the processed data and indices to JSON files.
+    """
+    data = load_data_from_file(INPUT_FILE)
+    if not data:
+        print("No data processed, exiting.")
+        return
+    
+    processed_data = process_data(data)
+    save_data_to_file(processed_data)
+    print("Processing completed! Data saved to processed_products.jsonl")
+
+    indexed_data = load_data_from_file(PROCESSED_FILE)
+    title_index = build_inverted_index_with_positions("title", indexed_data)
+    description_index = build_inverted_index_with_positions("description", indexed_data)
+
+    save_index_to_file(title_index, "index_title_with_positions.json")
+    save_index_to_file(description_index, "index_description_with_positions.json")
+
+    reviews_index = build_reviews_index(indexed_data)
+    if reviews_index:
+        save_reviews_index_to_file(reviews_index)
+        print("Reviews index creation completed!")
+
+    features_index = build_features_index(indexed_data)
+    save_features_index_to_file(features_index)
+    print("Features index creation completed!")
+
+    print("All indexing completed!")
+
+if __name__ == "__main__":
+    run_main_pipeline()
