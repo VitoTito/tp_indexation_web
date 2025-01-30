@@ -132,10 +132,11 @@ def compute_bm25(query_tokens, index_data, k1=1.5, b=0.75):
         if token in index_data:
             df = len(index_data[token])  # Document frequency
             idf = math.log((N - df + 0.5) / (df + 0.5) + 1)
-            
-            for doc in index_data[token]:
-                tf = len(index_data[token])  # Term frequency
-                doc_len = len(index_data[token])
+
+            for doc, doc_data in index_data[token].items():
+                tf = doc_data.get(token, 0)  # How many times the token appears in the document
+                doc_len = len(doc_data)  # Document length (total number of terms in the document)
+                
                 score = idf * ((tf * (k1 + 1)) / (tf + k1 * (1 - b + b * (doc_len / avgdl))))
                 scores[doc] += score
 
@@ -163,7 +164,7 @@ def rank_documents(query_tokens, index_data, title_index, review_index):
     Returns
     -------
     list
-        A sorted list of tuples, where each tuple contains a document URL and its corresponding score, normalized from 0 to 10.
+        A sorted list of tuples, where each tuple contains a document URL and its corresponding score.
     """
     bm25_scores = compute_bm25(query_tokens, index_data)
 
@@ -288,3 +289,111 @@ def process_query(query, index_data, synonyms_dict, title_index, review_index, m
     ranked_results = ensure_unique_scores(ranked_results)
 
     return ranked_results
+
+
+def main():
+    # Paths to the JSON files
+    paths = {
+        "brand": 'index_provided/brand_index.json',
+        "description": 'index_provided/description_index.json',
+        "domain": 'index_provided/domain_index.json',
+        "origin": 'index_provided/origin_index.json',
+        "synonyms": 'index_provided/origin_synonyms.json',
+        "reviews": 'index_provided/reviews_index.json',
+        "title": 'index_provided/title_index.json'
+    }
+
+    # Load the index data
+    origin_index = load_json_file(paths["origin"])
+    origin_synonyms = load_json_file(paths["synonyms"])
+    review_index = load_json_file(paths["reviews"])
+    title_index = load_json_file(paths["title"])
+
+    # Test with three queries
+    test_query = "Unleash the power within with our 'Dark Red Potion', an energy drink."
+    ranked_results = process_query(
+        test_query,
+        origin_index,
+        origin_synonyms,
+        title_index,
+        review_index,
+        match_all=True
+    )
+
+    # Format output as JSON
+    output = {
+        "total_documents": len(origin_index),
+        "filtered_documents": len(ranked_results),
+        "results": [
+            {
+                "title": doc,
+                "url": doc,
+                "score": score
+            } for doc, score in ranked_results
+        ]
+    }
+
+    # Save the output to a JSON file
+    with open('ranked_tests.json', 'w') as outfile:
+        json.dump(output, outfile, indent=2)
+
+
+
+    test_query = "Step out in style with our Women's High Heel Sandals. These sandals feature a strappy design that adds"
+    ranked_results = process_query(
+        test_query,
+        origin_index,
+        origin_synonyms,
+        title_index,
+        review_index,
+        match_all=True
+    )
+
+    # Format output as JSON
+    output = {
+        "total_documents": len(origin_index),
+        "filtered_documents": len(ranked_results),
+        "results": [
+            {
+                "title": doc,
+                "url": doc,
+                "score": score
+            } for doc, score in ranked_results
+        ]
+    }
+
+    # Save the output to a JSON file
+    with open('ranked_tests_2.json', 'w') as outfile:
+        json.dump(output, outfile, indent=2)
+
+
+
+    test_query = "Blue"
+    ranked_results = process_query(
+        test_query,
+        origin_index,
+        origin_synonyms,
+        title_index,
+        review_index,
+        match_all=True
+    )
+
+    # Format output as JSON
+    output = {
+        "total_documents": len(origin_index),
+        "filtered_documents": len(ranked_results),
+        "results": [
+            {
+                "title": doc,
+                "url": doc,
+                "score": score
+            } for doc, score in ranked_results
+        ]
+    }
+
+    # Save the output to a JSON file
+    with open('ranked_tests_3.json', 'w') as outfile:
+        json.dump(output, outfile, indent=2)
+
+if __name__ == '__main__':
+    main()

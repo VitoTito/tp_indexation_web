@@ -1,0 +1,786 @@
+{
+  "total_documents": 15,
+  "filtered_documents": 156,
+  "results": [
+    {
+      "title": "https://web-scraping.dev/product/20",
+      "url": "https://web-scraping.dev/product/20",
+      "score": 31.7948
+    },
+    {
+      "title": "https://web-scraping.dev/product/20?variant=beige-6",
+      "url": "https://web-scraping.dev/product/20?variant=beige-6",
+      "score": 12.935072009486321
+    },
+    {
+      "title": "https://web-scraping.dev/product/8?variant=beige-7",
+      "url": "https://web-scraping.dev/product/8?variant=beige-7",
+      "score": 12.934400946441675
+    },
+    {
+      "title": "https://web-scraping.dev/product/20?variant=beige-7",
+      "url": "https://web-scraping.dev/product/20?variant=beige-7",
+      "score": 12.913131920062561
+    },
+    {
+      "title": "https://web-scraping.dev/product/8?variant=beige-8",
+      "url": "https://web-scraping.dev/product/8?variant=beige-8",
+      "score": 12.901937595496918
+    },
+    {
+      "title": "https://web-scraping.dev/product/8?variant=blue-9",
+      "url": "https://web-scraping.dev/product/8?variant=blue-9",
+      "score": 12.869349450997834
+    },
+    {
+      "title": "https://web-scraping.dev/product/8?variant=beige-6",
+      "url": "https://web-scraping.dev/product/8?variant=beige-6",
+      "score": 12.867288395446579
+    },
+    {
+      "title": "https://web-scraping.dev/product/20?variant=beige-8",
+      "url": "https://web-scraping.dev/product/20?variant=beige-8",
+      "score": 12.866035387907582
+    },
+    {
+      "title": "https://web-scraping.dev/product/20?variant=blue-9",
+      "url": "https://web-scraping.dev/product/20?variant=blue-9",
+      "score": 12.861414486504147
+    },
+    {
+      "title": "https://web-scraping.dev/product/8",
+      "url": "https://web-scraping.dev/product/8",
+      "score": 12.84
+    },
+    {
+      "title": "https://web-scraping.dev/product/26?variant=six-pack",
+      "url": "https://web-scraping.dev/product/26?variant=six-pack",
+      "score": 9.902188267190862
+    },
+    {
+      "title": "https://web-scraping.dev/product/5?variant=one",
+      "url": "https://web-scraping.dev/product/5?variant=one",
+      "score": 9.838598655167392
+    },
+    {
+      "title": "https://web-scraping.dev/product/18?variant=six-pack",
+      "url": "https://web-scraping.dev/product/18?variant=six-pack",
+      "score": 9.836500000000001
+    },
+    {
+      "title": "https://web-scraping.dev/product/25?variant=orange-small",
+      "url": "https://web-scraping.dev/product/25?variant=orange-small",
+      "score": 9.78949898312776
+    },
+    {
+      "title": "https://web-scraping.dev/product/13?variant=orange-large",
+      "url": "https://web-scraping.dev/product/13?variant=orange-large",
+      "score": 9.786638217883366
+    },
+    {
+      "title": "https://web-scraping.dev/product/7?variant=9",
+      "url": "https://web-scraping.dev/product/7?variant=9",
+      "score": 9.7624
+    },
+    {
+      "title": "https://web-scraping.dev/product/12?variant=sand-small",
+      "url": "https://web-scraping.dev/product/12?variant=sand-small",
+      "score": 7.182391058999519
+    },
+    {
+      "title": "https://web-scraping.dev/product/12?variant=darkgrey-small",
+      "url": "https://web-scraping.dev/product/12?variant=darkgrey-small",
+      "score": 7.16521434275215
+    },
+    {
+      "title": "https://web-scraping.dev/product/24?variant=grey-small",
+      "url": "https://web-scraping.dev/product/24?variant=grey-small",
+      "score": 7.164571781899742
+    },
+    {
+      "title": "https://web-scraping.dev/product/12?variant=darkgrey-medium",
+      "url": "https://web-scraping.dev/product/12?variant=darkgrey-medium",
+      "score": 7.163990313817535
+    },
+    {
+      "title": "https://web-scraping.dev/product/24?variant=darkgrey-small",
+      "url": "https://web-scraping.dev/product/24?variant=darkgrey-small",
+      "score": 7.162955788189577
+    },
+    {
+      "title": "https://web-scraping.dev/product/10",
+      "url": "https://web-scraping.dev/product/10",
+      "score": 7.16263434745264
+    },
+    {
+      "title": "https://web-scraping.dev/product/24?variant=sand-small",
+      "url": "https://web-scraping.dev/product/24?variant=sand-small",
+      "score": 7.157399148658141
+    },
+    {
+      "title": "https://web-scraping.dev/product/12?variant=pink-small",
+      "url": "https://web-scraping.dev/product/12?variant=pink-small",
+      "score": 7.152458033265213
+    },
+    {
+      "title": "https://web-scraping.dev/product/24?variant=pink-small",
+      "url": "https://web-scraping.dev/product/24?variant=pink-small",
+      "score": 7.149100425632289
+    },
+    {
+      "title": "https://web-scraping.dev/product/24?variant=pink-medium",
+      "url": "https://web-scraping.dev/product/24?variant=pink-medium",
+      "score": 7.1459459012381465
+    },
+    {
+      "title": "https://web-scraping.dev/product/22?variant=blue-6",
+      "url": "https://web-scraping.dev/product/22?variant=blue-6",
+      "score": 7.144993787949777
+    },
+    {
+      "title": "https://web-scraping.dev/product/21",
+      "url": "https://web-scraping.dev/product/21",
+      "score": 7.137852336924227
+    },
+    {
+      "title": "https://web-scraping.dev/product/24?variant=darkgrey-medium",
+      "url": "https://web-scraping.dev/product/24?variant=darkgrey-medium",
+      "score": 7.137593311733436
+    },
+    {
+      "title": "https://web-scraping.dev/product/12?variant=grey-small",
+      "url": "https://web-scraping.dev/product/12?variant=grey-small",
+      "score": 7.135651427584647
+    },
+    {
+      "title": "https://web-scraping.dev/product/12?variant=pink-medium",
+      "url": "https://web-scraping.dev/product/12?variant=pink-medium",
+      "score": 7.134149611599714
+    },
+    {
+      "title": "https://web-scraping.dev/product/12?variant=grey-medium",
+      "url": "https://web-scraping.dev/product/12?variant=grey-medium",
+      "score": 7.1276549189732075
+    },
+    {
+      "title": "https://web-scraping.dev/product/12?variant=sand-medium",
+      "url": "https://web-scraping.dev/product/12?variant=sand-medium",
+      "score": 7.117606108107061
+    },
+    {
+      "title": "https://web-scraping.dev/product/24?variant=grey-medium",
+      "url": "https://web-scraping.dev/product/24?variant=grey-medium",
+      "score": 7.1097724035416885
+    },
+    {
+      "title": "https://web-scraping.dev/product/24?variant=sand-medium",
+      "url": "https://web-scraping.dev/product/24?variant=sand-medium",
+      "score": 7.106766264714767
+    },
+    {
+      "title": "https://web-scraping.dev/product/12",
+      "url": "https://web-scraping.dev/product/12",
+      "score": 7.105779874544692
+    },
+    {
+      "title": "https://web-scraping.dev/product/24",
+      "url": "https://web-scraping.dev/product/24",
+      "score": 7.094799999999999
+    },
+    {
+      "title": "https://web-scraping.dev/product/6?variant=one",
+      "url": "https://web-scraping.dev/product/6?variant=one",
+      "score": 4.045385489985245
+    },
+    {
+      "title": "https://web-scraping.dev/product/2?variant=one",
+      "url": "https://web-scraping.dev/product/2?variant=one",
+      "score": 4.03815345733543
+    },
+    {
+      "title": "https://web-scraping.dev/product/28?variant=six-pack",
+      "url": "https://web-scraping.dev/product/28?variant=six-pack",
+      "score": 4.037365542440389
+    },
+    {
+      "title": "https://web-scraping.dev/product/2",
+      "url": "https://web-scraping.dev/product/2",
+      "score": 4.034903466267649
+    },
+    {
+      "title": "https://web-scraping.dev/product/4?variant=six-pack",
+      "url": "https://web-scraping.dev/product/4?variant=six-pack",
+      "score": 4.028849174204262
+    },
+    {
+      "title": "https://web-scraping.dev/product/27",
+      "url": "https://web-scraping.dev/product/27",
+      "score": 4.026968128384849
+    },
+    {
+      "title": "https://web-scraping.dev/product/4",
+      "url": "https://web-scraping.dev/product/4",
+      "score": 4.024767137556073
+    },
+    {
+      "title": "https://web-scraping.dev/product/15?variant=six-pack",
+      "url": "https://web-scraping.dev/product/15?variant=six-pack",
+      "score": 4.024031590999471
+    },
+    {
+      "title": "https://web-scraping.dev/product/15?variant=one",
+      "url": "https://web-scraping.dev/product/15?variant=one",
+      "score": 4.023336298877316
+    },
+    {
+      "title": "https://web-scraping.dev/product/3?variant=one",
+      "url": "https://web-scraping.dev/product/3?variant=one",
+      "score": 4.020206780429766
+    },
+    {
+      "title": "https://web-scraping.dev/product/27?variant=one",
+      "url": "https://web-scraping.dev/product/27?variant=one",
+      "score": 4.019503089403026
+    },
+    {
+      "title": "https://web-scraping.dev/product/19",
+      "url": "https://web-scraping.dev/product/19",
+      "score": 4.019044221515778
+    },
+    {
+      "title": "https://web-scraping.dev/product/19?variant=9",
+      "url": "https://web-scraping.dev/product/19?variant=9",
+      "score": 4.018121414194194
+    },
+    {
+      "title": "https://web-scraping.dev/product/5?variant=six-pack",
+      "url": "https://web-scraping.dev/product/5?variant=six-pack",
+      "score": 4.016484914596886
+    },
+    {
+      "title": "https://web-scraping.dev/product/18",
+      "url": "https://web-scraping.dev/product/18",
+      "score": 4.014778657264124
+    },
+    {
+      "title": "https://web-scraping.dev/product/2?variant=six-pack",
+      "url": "https://web-scraping.dev/product/2?variant=six-pack",
+      "score": 4.00802169550556
+    },
+    {
+      "title": "https://web-scraping.dev/product/4?variant=one",
+      "url": "https://web-scraping.dev/product/4?variant=one",
+      "score": 4.005598416628288
+    },
+    {
+      "title": "https://web-scraping.dev/product/1?variant=cherry-large",
+      "url": "https://web-scraping.dev/product/1?variant=cherry-large",
+      "score": 4.003958439723209
+    },
+    {
+      "title": "https://web-scraping.dev/product/19?variant=8",
+      "url": "https://web-scraping.dev/product/19?variant=8",
+      "score": 4.003864760964759
+    },
+    {
+      "title": "https://web-scraping.dev/product/27?variant=six-pack",
+      "url": "https://web-scraping.dev/product/27?variant=six-pack",
+      "score": 4.003764612178951
+    },
+    {
+      "title": "https://web-scraping.dev/product/1?variant=orange-small",
+      "url": "https://web-scraping.dev/product/1?variant=orange-small",
+      "score": 4.003283790399451
+    },
+    {
+      "title": "https://web-scraping.dev/product/25?variant=cherry-large",
+      "url": "https://web-scraping.dev/product/25?variant=cherry-large",
+      "score": 4.000991130916348
+    },
+    {
+      "title": "https://web-scraping.dev/product/16?variant=one",
+      "url": "https://web-scraping.dev/product/16?variant=one",
+      "score": 3.9948554969869527
+    },
+    {
+      "title": "https://web-scraping.dev/product/13?variant=cherry-small",
+      "url": "https://web-scraping.dev/product/13?variant=cherry-small",
+      "score": 3.993397094495379
+    },
+    {
+      "title": "https://web-scraping.dev/product/6?variant=six-pack",
+      "url": "https://web-scraping.dev/product/6?variant=six-pack",
+      "score": 3.9931940686828193
+    },
+    {
+      "title": "https://web-scraping.dev/product/14?variant=one",
+      "url": "https://web-scraping.dev/product/14?variant=one",
+      "score": 3.9929392401241324
+    },
+    {
+      "title": "https://web-scraping.dev/product/17",
+      "url": "https://web-scraping.dev/product/17",
+      "score": 3.992701570692652
+    },
+    {
+      "title": "https://web-scraping.dev/product/13?variant=orange-medium",
+      "url": "https://web-scraping.dev/product/13?variant=orange-medium",
+      "score": 3.9922110479765576
+    },
+    {
+      "title": "https://web-scraping.dev/product/7",
+      "url": "https://web-scraping.dev/product/7",
+      "score": 3.9904444979363634
+    },
+    {
+      "title": "https://web-scraping.dev/product/3",
+      "url": "https://web-scraping.dev/product/3",
+      "score": 3.990095603252367
+    },
+    {
+      "title": "https://web-scraping.dev/product/25?variant=cherry-medium",
+      "url": "https://web-scraping.dev/product/25?variant=cherry-medium",
+      "score": 3.9884118180665347
+    },
+    {
+      "title": "https://web-scraping.dev/product/1?variant=cherry-medium",
+      "url": "https://web-scraping.dev/product/1?variant=cherry-medium",
+      "score": 3.9875429892375385
+    },
+    {
+      "title": "https://web-scraping.dev/product/26?variant=one",
+      "url": "https://web-scraping.dev/product/26?variant=one",
+      "score": 3.986051521266493
+    },
+    {
+      "title": "https://web-scraping.dev/product/14?variant=six-pack",
+      "url": "https://web-scraping.dev/product/14?variant=six-pack",
+      "score": 3.985786164271777
+    },
+    {
+      "title": "https://web-scraping.dev/product/13?variant=cherry-large",
+      "url": "https://web-scraping.dev/product/13?variant=cherry-large",
+      "score": 3.9853465539737387
+    },
+    {
+      "title": "https://web-scraping.dev/product/18?variant=one",
+      "url": "https://web-scraping.dev/product/18?variant=one",
+      "score": 3.983599304973784
+    },
+    {
+      "title": "https://web-scraping.dev/product/16?variant=six-pack",
+      "url": "https://web-scraping.dev/product/16?variant=six-pack",
+      "score": 3.983430586887472
+    },
+    {
+      "title": "https://web-scraping.dev/product/28",
+      "url": "https://web-scraping.dev/product/28",
+      "score": 3.981823796776753
+    },
+    {
+      "title": "https://web-scraping.dev/product/25?variant=cherry-small",
+      "url": "https://web-scraping.dev/product/25?variant=cherry-small",
+      "score": 3.9771404702151347
+    },
+    {
+      "title": "https://web-scraping.dev/product/17?variant=one",
+      "url": "https://web-scraping.dev/product/17?variant=one",
+      "score": 3.976117550236288
+    },
+    {
+      "title": "https://web-scraping.dev/product/25?variant=orange-medium",
+      "url": "https://web-scraping.dev/product/25?variant=orange-medium",
+      "score": 3.974531005528051
+    },
+    {
+      "title": "https://web-scraping.dev/product/3?variant=six-pack",
+      "url": "https://web-scraping.dev/product/3?variant=six-pack",
+      "score": 3.972676388553826
+    },
+    {
+      "title": "https://web-scraping.dev/product/6",
+      "url": "https://web-scraping.dev/product/6",
+      "score": 3.9726699440781603
+    },
+    {
+      "title": "https://web-scraping.dev/product/5",
+      "url": "https://web-scraping.dev/product/5",
+      "score": 3.9714551082454075
+    },
+    {
+      "title": "https://web-scraping.dev/product/15",
+      "url": "https://web-scraping.dev/product/15",
+      "score": 3.9709223195218613
+    },
+    {
+      "title": "https://web-scraping.dev/product/14",
+      "url": "https://web-scraping.dev/product/14",
+      "score": 3.9703887501789055
+    },
+    {
+      "title": "https://web-scraping.dev/product/13?variant=orange-small",
+      "url": "https://web-scraping.dev/product/13?variant=orange-small",
+      "score": 3.9693054168509385
+    },
+    {
+      "title": "https://web-scraping.dev/product/28?variant=one",
+      "url": "https://web-scraping.dev/product/28?variant=one",
+      "score": 3.9684534732981755
+    },
+    {
+      "title": "https://web-scraping.dev/product/17?variant=six-pack",
+      "url": "https://web-scraping.dev/product/17?variant=six-pack",
+      "score": 3.9683369994157065
+    },
+    {
+      "title": "https://web-scraping.dev/product/7?variant=8",
+      "url": "https://web-scraping.dev/product/7?variant=8",
+      "score": 3.965594959558112
+    },
+    {
+      "title": "https://web-scraping.dev/product/26",
+      "url": "https://web-scraping.dev/product/26",
+      "score": 3.9631081428439487
+    },
+    {
+      "title": "https://web-scraping.dev/product/25?variant=orange-large",
+      "url": "https://web-scraping.dev/product/25?variant=orange-large",
+      "score": 3.96208245450943
+    },
+    {
+      "title": "https://web-scraping.dev/product/1?variant=orange-medium",
+      "url": "https://web-scraping.dev/product/1?variant=orange-medium",
+      "score": 3.9597329379581714
+    },
+    {
+      "title": "https://web-scraping.dev/product/1?variant=orange-large",
+      "url": "https://web-scraping.dev/product/1?variant=orange-large",
+      "score": 3.958352847458592
+    },
+    {
+      "title": "https://web-scraping.dev/product/13",
+      "url": "https://web-scraping.dev/product/13",
+      "score": 3.950910634457819
+    },
+    {
+      "title": "https://web-scraping.dev/product/1",
+      "url": "https://web-scraping.dev/product/1",
+      "score": 3.9509045355114067
+    },
+    {
+      "title": "https://web-scraping.dev/product/13?variant=cherry-medium",
+      "url": "https://web-scraping.dev/product/13?variant=cherry-medium",
+      "score": 3.9505569247927363
+    },
+    {
+      "title": "https://web-scraping.dev/product/16",
+      "url": "https://web-scraping.dev/product/16",
+      "score": 3.95
+    },
+    {
+      "title": "https://web-scraping.dev/product/25",
+      "url": "https://web-scraping.dev/product/25",
+      "score": 3.943623212343677
+    },
+    {
+      "title": "https://web-scraping.dev/product/19?variant=7",
+      "url": "https://web-scraping.dev/product/19?variant=7",
+      "score": 3.94274264412381
+    },
+    {
+      "title": "https://web-scraping.dev/product/7?variant=7",
+      "url": "https://web-scraping.dev/product/7?variant=7",
+      "score": 3.9391303890681844
+    },
+    {
+      "title": "https://web-scraping.dev/product/7?variant=6",
+      "url": "https://web-scraping.dev/product/7?variant=6",
+      "score": 3.9389999083027147
+    },
+    {
+      "title": "https://web-scraping.dev/product/19?variant=6",
+      "url": "https://web-scraping.dev/product/19?variant=6",
+      "score": 3.936733281502789
+    },
+    {
+      "title": "https://web-scraping.dev/product/1?variant=cherry-small",
+      "url": "https://web-scraping.dev/product/1?variant=cherry-small",
+      "score": 3.92
+    },
+    {
+      "title": "https://web-scraping.dev/product/23",
+      "url": "https://web-scraping.dev/product/23",
+      "score": 2.9729924001749364
+    },
+    {
+      "title": "https://web-scraping.dev/product/11?variant=black41",
+      "url": "https://web-scraping.dev/product/11?variant=black41",
+      "score": 2.968458868727315
+    },
+    {
+      "title": "https://web-scraping.dev/product/23?variant=black42",
+      "url": "https://web-scraping.dev/product/23?variant=black42",
+      "score": 2.9650579136575823
+    },
+    {
+      "title": "https://web-scraping.dev/product/23?variant=white42",
+      "url": "https://web-scraping.dev/product/23?variant=white42",
+      "score": 2.9527122803858035
+    },
+    {
+      "title": "https://web-scraping.dev/product/23?variant=black40",
+      "url": "https://web-scraping.dev/product/23?variant=black40",
+      "score": 2.9520115187518496
+    },
+    {
+      "title": "https://web-scraping.dev/product/11?variant=white40",
+      "url": "https://web-scraping.dev/product/11?variant=white40",
+      "score": 2.937708240042093
+    },
+    {
+      "title": "https://web-scraping.dev/product/9?variant=12",
+      "url": "https://web-scraping.dev/product/9?variant=12",
+      "score": 2.9375533592680902
+    },
+    {
+      "title": "https://web-scraping.dev/product/23?variant=white41",
+      "url": "https://web-scraping.dev/product/23?variant=white41",
+      "score": 2.930732799346917
+    },
+    {
+      "title": "https://web-scraping.dev/product/11?variant=white42",
+      "url": "https://web-scraping.dev/product/11?variant=white42",
+      "score": 2.9265327442819387
+    },
+    {
+      "title": "https://web-scraping.dev/product/11",
+      "url": "https://web-scraping.dev/product/11",
+      "score": 2.926283516019075
+    },
+    {
+      "title": "https://web-scraping.dev/product/22?variant=red-6",
+      "url": "https://web-scraping.dev/product/22?variant=red-6",
+      "score": 2.9229923546813983
+    },
+    {
+      "title": "https://web-scraping.dev/product/23?variant=white40",
+      "url": "https://web-scraping.dev/product/23?variant=white40",
+      "score": 2.921939521894547
+    },
+    {
+      "title": "https://web-scraping.dev/product/11?variant=black40",
+      "url": "https://web-scraping.dev/product/11?variant=black40",
+      "score": 2.9213496118730604
+    },
+    {
+      "title": "https://web-scraping.dev/product/10?variant=red-5",
+      "url": "https://web-scraping.dev/product/10?variant=red-5",
+      "score": 2.920927081461311
+    },
+    {
+      "title": "https://web-scraping.dev/product/10?variant=blue-5",
+      "url": "https://web-scraping.dev/product/10?variant=blue-5",
+      "score": 2.915846544790267
+    },
+    {
+      "title": "https://web-scraping.dev/product/22?variant=red-5",
+      "url": "https://web-scraping.dev/product/22?variant=red-5",
+      "score": 2.91015016393591
+    },
+    {
+      "title": "https://web-scraping.dev/product/11?variant=black42",
+      "url": "https://web-scraping.dev/product/11?variant=black42",
+      "score": 2.9097871933281207
+    },
+    {
+      "title": "https://web-scraping.dev/product/11?variant=white41",
+      "url": "https://web-scraping.dev/product/11?variant=white41",
+      "score": 2.90859899488299
+    },
+    {
+      "title": "https://web-scraping.dev/product/9",
+      "url": "https://web-scraping.dev/product/9",
+      "score": 2.9057133501699117
+    },
+    {
+      "title": "https://web-scraping.dev/product/9?variant=11",
+      "url": "https://web-scraping.dev/product/9?variant=11",
+      "score": 2.903354589369958
+    },
+    {
+      "title": "https://web-scraping.dev/product/9?variant=10",
+      "url": "https://web-scraping.dev/product/9?variant=10",
+      "score": 2.892344275946852
+    },
+    {
+      "title": "https://web-scraping.dev/product/22?variant=blue-5",
+      "url": "https://web-scraping.dev/product/22?variant=blue-5",
+      "score": 2.8846672103242326
+    },
+    {
+      "title": "https://web-scraping.dev/product/9?variant=9",
+      "url": "https://web-scraping.dev/product/9?variant=9",
+      "score": 2.8841076729758535
+    },
+    {
+      "title": "https://web-scraping.dev/product/21?variant=10",
+      "url": "https://web-scraping.dev/product/21?variant=10",
+      "score": 2.880080197129009
+    },
+    {
+      "title": "https://web-scraping.dev/product/23?variant=black41",
+      "url": "https://web-scraping.dev/product/23?variant=black41",
+      "score": 2.88
+    },
+    {
+      "title": "https://web-scraping.dev/product/22",
+      "url": "https://web-scraping.dev/product/22",
+      "score": 2.879310849723438
+    },
+    {
+      "title": "https://web-scraping.dev/product/21?variant=12",
+      "url": "https://web-scraping.dev/product/21?variant=12",
+      "score": 2.868830020604224
+    },
+    {
+      "title": "https://web-scraping.dev/product/10?variant=blue-6",
+      "url": "https://web-scraping.dev/product/10?variant=blue-6",
+      "score": 2.8675154076102545
+    },
+    {
+      "title": "https://web-scraping.dev/product/21?variant=9",
+      "url": "https://web-scraping.dev/product/21?variant=9",
+      "score": 2.8653936333219985
+    },
+    {
+      "title": "https://web-scraping.dev/product/21?variant=11",
+      "url": "https://web-scraping.dev/product/21?variant=11",
+      "score": 2.865371427641472
+    },
+    {
+      "title": "https://web-scraping.dev/product/10?variant=red-6",
+      "url": "https://web-scraping.dev/product/10?variant=red-6",
+      "score": 2.84
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=apparel&page=3",
+      "url": "https://web-scraping.dev/products?category=apparel&page=3",
+      "score": 0.15901149538630716
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=household&page=5",
+      "url": "https://web-scraping.dev/products?category=household&page=5",
+      "score": 0.12860003931278724
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=apparel&page=5",
+      "url": "https://web-scraping.dev/products?category=apparel&page=5",
+      "score": 0.09769904397769938
+    },
+    {
+      "title": "https://web-scraping.dev/products?page=3",
+      "url": "https://web-scraping.dev/products?page=3",
+      "score": 0.09710734409614961
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=apparel&page=2",
+      "url": "https://web-scraping.dev/products?category=apparel&page=2",
+      "score": 0.09124056197643994
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=apparel&page=1",
+      "url": "https://web-scraping.dev/products?category=apparel&page=1",
+      "score": 0.08681178899444499
+    },
+    {
+      "title": "https://web-scraping.dev/products?page=5",
+      "url": "https://web-scraping.dev/products?page=5",
+      "score": 0.08
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=household&page=4",
+      "url": "https://web-scraping.dev/products?category=household&page=4",
+      "score": 0.06254605721834756
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=consumables&page=2",
+      "url": "https://web-scraping.dev/products?category=consumables&page=2",
+      "score": 0.057954593775971265
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=consumables&page=1",
+      "url": "https://web-scraping.dev/products?category=consumables&page=1",
+      "score": 0.05535642461484727
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=consumables",
+      "url": "https://web-scraping.dev/products?category=consumables",
+      "score": 0.051209787530399384
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=apparel",
+      "url": "https://web-scraping.dev/products?category=apparel",
+      "score": 0.048737342610273134
+    },
+    {
+      "title": "https://web-scraping.dev/products",
+      "url": "https://web-scraping.dev/products",
+      "score": 0.04578909885478491
+    },
+    {
+      "title": "https://web-scraping.dev/products?page=2",
+      "url": "https://web-scraping.dev/products?page=2",
+      "score": 0.04294961533259046
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=consumables&page=5",
+      "url": "https://web-scraping.dev/products?category=consumables&page=5",
+      "score": 0.037469379218858845
+    },
+    {
+      "title": "https://web-scraping.dev/products?page=1",
+      "url": "https://web-scraping.dev/products?page=1",
+      "score": 0.030487648198818773
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=household",
+      "url": "https://web-scraping.dev/products?category=household",
+      "score": 0.029129304990401332
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=consumables&page=3",
+      "url": "https://web-scraping.dev/products?category=consumables&page=3",
+      "score": 0.028096136467315153
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=household&page=3",
+      "url": "https://web-scraping.dev/products?category=household&page=3",
+      "score": 0.022594804471866674
+    },
+    {
+      "title": "https://web-scraping.dev/products?page=4",
+      "url": "https://web-scraping.dev/products?page=4",
+      "score": 0.02014164992065874
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=consumables&page=4",
+      "url": "https://web-scraping.dev/products?category=consumables&page=4",
+      "score": 0.016799545667911024
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=household&page=1",
+      "url": "https://web-scraping.dev/products?category=household&page=1",
+      "score": 0.014922818997838289
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=household&page=2",
+      "url": "https://web-scraping.dev/products?category=household&page=2",
+      "score": 0.012997896673361202
+    },
+    {
+      "title": "https://web-scraping.dev/products?category=apparel&page=4",
+      "url": "https://web-scraping.dev/products?category=apparel&page=4",
+      "score": 0.0
+    }
+  ]
+}

@@ -103,3 +103,5 @@ To launch search_engine.py, just change line 21/22 :
 # Request
 test_query = "Dragon Energy Potion"
 ```
+
+Results are saved in `ranked_results.json`

@@ -1,7 +1,7 @@
 import json
 from engine import process_query, load_json_file
 
-# Charger les données d'index depuis les fichiers JSON
+# Load index data from JSON files
 paths = {
     "brand": 'index_provided/brand_index.json',
     "description": 'index_provided/description_index.json',
@@ -12,16 +12,16 @@ paths = {
     "title": 'index_provided/title_index.json'
 }
 
-# Charger les index
+# Load the indexes
 origin_index = load_json_file(paths["origin"])
 origin_synonyms = load_json_file(paths["synonyms"])
 title_index = load_json_file(paths["title"])
 review_index = load_json_file(paths["reviews"])
 
-# Requête de test
+# Request
 test_query = "Dragon Energy Potion"
 
-# Appeler la fonction de recherche
+# Call the search function
 ranked_results = process_query(
     test_query,
     origin_index,
@@ -31,7 +31,7 @@ ranked_results = process_query(
     match_all=True
 )
 
-# Formatage des résultats pour l'affichage ou pour enregistrer dans un fichier
+# Format the results for display or to save them in a file
 output = {
     "total_documents": len(origin_index),
     "filtered_documents": len(ranked_results),
@@ -44,9 +44,9 @@ output = {
     ]
 }
 
-# Sauvegarder les résultats dans un fichier JSON
+# Save the results to a JSON file
 with open('ranked_results.json', 'w') as outfile:
     json.dump(output, outfile, indent=2)
 
-# Afficher un message pour confirmer que les résultats ont été sauvegardés
-print("Les résultats ont été sauvegardés dans 'ranked_results.json'.")
+# Print a message to confirm that the results have been saved
+print("The results have been saved to 'ranked_results.json'.")
